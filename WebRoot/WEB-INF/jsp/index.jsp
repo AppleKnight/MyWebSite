@@ -24,6 +24,20 @@
 	<script type="text/javascript" src="${jsPath }/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="${jsPath }/bootstrap.min.js"></script>
 	<script type="text/javascript" src="${jsPath }/layer/layer.js"></script>
+	<style type="text/css">
+		.navbar-nav > li >a:HOVER {
+		    color: #fff;
+    		background-color: #080808 !important;
+		}
+		.navbar-nav > li >a:FOCUS {
+			color: #fff;
+    		background-color: #080808 !important;
+		}
+		.navbar-inverse {
+		    background-color: #333333;
+		    border-color: #333333;
+		}
+	</style>
 	<script type="text/javascript">
 		/* 初始化时执行 */
 		$(function(){
@@ -48,23 +62,25 @@
 </head>
 <body>
 	<div class="container">
+		
+		<nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">老哥666</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">首页</a></li>
+                <li><a href="#about">聊天室</a></li>
+                <li><a id="promiseMe" href="#">点赞</a></li>
+                <li><a href="#contact">作者</a></li>
+                <li><a href="#contact">IP：${ipAddr }</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+		
 		<img class="img-responsive" alt="" src="${imgPath }/003.jpg" />
-		<!-- ip address -->
-		<div class="row" style="margin:20px;">
-			<div class="col-xs-4"></div>
-			<div class="col-xs-4">
-				您当前的IP为：${ipAddr }
-			</div>
-			<div class="col-xs-4"></div>
-		</div>
-		<!-- function -->
-		<div class="row">
-			<div class="col-xs-4"></div>
-			<div class="col-xs-4  col-sm-offset-1">
-				<input id="promiseMe" class="btn btn-success" type="button" value="点　赞"/>
-			</div>
-			<div class="col-xs-4"></div>
-		</div>
 	</div>
 </body>
 </html>
