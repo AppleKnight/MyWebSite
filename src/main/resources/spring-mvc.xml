@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/mvc 
+    http://www.springframework.org/schema/mvc/spring-mvc.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- 配置自动扫描的包 -->
+	<context:component-scan base-package="com.wat" >
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	</context:component-scan>
+	
+	<!-- 注解驱动 -->
+	<mvc:annotation-driven/>
+	
+	<!-- 静态文件 -->
+	<mvc:resources location="/resources/" mapping="/resources/**" />
+	
+	<!-- 使用内部资源视图解析器 -->
+	<beans:bean
+        class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <beans:property name="prefix" value="/WEB-INF/jsp/" />
+        <beans:property name="suffix" value=".jsp" />
+    </beans:bean>
+		
+	<!-- 文件上传 -->
+	<beans:bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<beans:property name="maxUploadSize" value="104857600"/>
+		<beans:property name="maxInMemorySize" value="4096"/>
+		<beans:property name="uploadTempDir" value="fileUpload/temp"/>
+	</beans:bean>
+
+</beans:beans>
