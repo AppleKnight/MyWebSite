@@ -1,8 +1,10 @@
 package com.wat.action;
 
+import java.io.IOException;
 import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
@@ -11,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.qq.connect.QQConnectException;
+import com.qq.connect.oauth.Oauth;
 import com.wat.dao.UserDao;
 import com.wat.domain.UserInfo;
 
@@ -55,6 +59,24 @@ public class IndexAction
         }*/
             int result = userDao.addUser(user);
             return String.valueOf(result);
+    }
+    
+    /**
+     * 描述:
+     * 参数：@param
+     * 返回值：void  
+     * 修改人： 吴滔 P0071972
+     * 修改时间： 2017年6月26日 下午9:27:30
+     */
+    @RequestMapping(value="/beforeQQLogin")
+    public void beforeQQLogin(HttpServletRequest request,HttpServletResponse response){
+    	 try {
+			response.sendRedirect(new Oauth().getAuthorizeURL(request));
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (QQConnectException e) {
+			e.printStackTrace();
+		}
     }
     
 }

@@ -66,21 +66,24 @@
 		<nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">老哥666</a>
+              <a class="navbar-brand" href="http://39.108.96.186">老哥666</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="#">首页</a></li>
+                <li><a href="http://39.108.96.186">首页</a></li>
                 <li><a href="#about">聊天室</a></li>
                 <li><a id="promiseMe" href="#">点赞</a></li>
-                <li><a href="${base }/beforeQQLogin.do">QQLogin</a></li>
+                <li><a href="#contact">作者</a></li>
                 <li><a href="#contact">IP：${ipAddr }</a></li>
               </ul>
             </div>
           </div>
         </nav>
-		
-		<img class="img-responsive" alt="" src="${imgPath }/003.jpg" />
+		<p>access_token:${demo_access_token }</p>
+		<p>token_expirein：${demo_token_expirein }</p>
+		<p>欢迎你，代号为 ${openID }的用户!</p>
+		<p>欢迎你，昵称为 ${nickName }的${gender} 士!</p>
+		<img class="img-responsive" alt="" src="${headImg }" />
 	</div>
 </body>
 </html>
