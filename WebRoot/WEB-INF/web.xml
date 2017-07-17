@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>SpringCommonDemo</display-name>
+  <!-- 访问项目后直接定位到该页面 -->
   <welcome-file-list>
     <welcome-file>/WEB-INF/jsp/index.jsp</welcome-file>
   </welcome-file-list>
+  <!-- 上下文参数（组件） -->
    <context-param>     
      <param-name>contextConfigLocation</param-name>     
      <param-value>/WEB-INF/classes/jndi.datasource.xml</param-value>     
@@ -27,7 +29,43 @@
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-  
+	
+	<!-- 添加druid监控   监控SQL和数据源-->   
+	<servlet>  
+	    <servlet-name>DruidStatView</servlet-name>  
+	    <servlet-class>com.alibaba.druid.support.http.StatViewServlet</servlet-class>  
+	</servlet>  
+	<servlet-mapping>  
+	    <servlet-name>DruidStatView</servlet-name>  
+	    <url-pattern>/druid/*</url-pattern>  
+	</servlet-mapping> 
+	 <!-- 添加Web应用等监控 监控web url session-->  
+	<filter>
+	    <filter-name>DruidWebStatFilter</filter-name>
+	    <filter-class>com.alibaba.druid.support.http.WebStatFilter</filter-class>
+	    <!-- 对下列文件放行 -->
+	    <init-param>
+	        <param-name>exclusions</param-name>
+	        <param-value>*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*</param-value>
+	    </init-param>
+	    <init-param>
+	        <param-name>profileEnable</param-name>
+	        <param-value>true</param-value>
+	    </init-param>
+	    <init-param>
+	        <param-name>principalCookieName</param-name>
+	        <param-value>USER_COOKIE</param-value>
+	    </init-param>
+	    <init-param>
+	        <param-name>principalSessionName</param-name>
+	        <param-value>USER_SESSION</param-value>
+	    </init-param>
+	</filter>
+	<filter-mapping>
+	    <filter-name>DruidWebStatFilter</filter-name>
+	    <url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
   <!-- 字符集过滤器 -->
   <filter>
   	<filter-name>encodingFilter</filter-name>

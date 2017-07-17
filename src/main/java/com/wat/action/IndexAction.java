@@ -1,6 +1,8 @@
 package com.wat.action;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
@@ -15,8 +17,11 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.qq.connect.QQConnectException;
 import com.qq.connect.oauth.Oauth;
+import com.wat.dao.FreemakerDao;
 import com.wat.dao.UserDao;
+import com.wat.domain.FreeMakerInfo;
 import com.wat.domain.UserInfo;
+import com.wat.freemaker.FreemakerTools;
 
 @Controller
 @Scope("prototype")
@@ -24,6 +29,8 @@ public class IndexAction
 {
     @Autowired
     private UserDao userDao;
+    @Autowired
+    private FreemakerDao freemakerDao;
     
     /**
      * 描述:
@@ -77,6 +84,25 @@ public class IndexAction
 		} catch (QQConnectException e) {
 			e.printStackTrace();
 		}
+    }
+    
+    @ResponseBody
+    @RequestMapping(value="/buildpage")
+    public String createStaticPage(HttpServletRequest request){
+    	Map<String, Object> map = new HashMap<String, Object>();
+    	FreeMakerInfo freeinfo =  freemakerDao.querySingleFreemaker();
+    	System.err.println(freeinfo.toString());
+    	FreemakerTools ft = new FreemakerTools();
+    	String filename = freeinfo.getTemplatename() + ".html";
+    	map.put("freemakertitle", "测试FreeMaker");
+    	map.put("parameters", "1");
+    	try {
+			ft.initBuildStaticPage(freeinfo.getSourceurl(), freeinfo.getTargeturl(), filename, map, request);
+		} catch (IOException e) {
+			e.printStackTrace();
+			return "Not done!";
+		}
+    	return "done!";
     }
     
 }

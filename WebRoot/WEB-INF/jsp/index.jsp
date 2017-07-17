@@ -56,13 +56,21 @@
 				});
 			});
 			
+			$("#buildpage").click(function(){
+				$.ajax({
+					url:"buildpage.do",
+					data:{},
+					success:function(result){
+						console.warn(result);
+					}
+				});
+			});
+			
 		});
 		
 	</script>
 </head>
 <body>
-	<div class="container">
-		
 		<nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
@@ -74,12 +82,17 @@
                 <li><a href="#about">聊天室</a></li>
                 <li><a id="promiseMe" href="#">点赞</a></li>
                 <li><a href="${base }/beforeQQLogin.do">QQLogin</a></li>
+                <li><a id="buildpage" href="#">FreeMaker</a></li>
                 <li><a href="#contact">IP：${ipAddr }</a></li>
               </ul>
+	            <div>
+	            	<span style="float:right !important;color:white;padding-top: 15px;">|</span>
+	            </div>
             </div>
           </div>
         </nav>
-		
+	<div class="container">
+		<a style="display:none;" href="${base }/freeindex.do">Freemaker!!!</a>
 		<img class="img-responsive" alt="" src="${imgPath }/003.jpg" />
 	</div>
 </body>

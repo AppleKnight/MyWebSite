@@ -18,8 +18,9 @@
 	<!-- 注解驱动 -->
 	<mvc:annotation-driven/>
 	
-	<!-- 静态文件 -->
+	<!-- 静态文件  location指实际项目中实际目录  mapping指资源位置 -->
 	<mvc:resources location="/resources/" mapping="/resources/**" />
+	<mvc:resources location="/html/" mapping="/html/**" />
 	
 	<!-- 使用内部资源视图解析器 -->
 	<beans:bean
