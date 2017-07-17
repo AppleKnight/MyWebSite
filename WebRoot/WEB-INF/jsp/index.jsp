@@ -25,12 +25,15 @@
 	<script type="text/javascript" src="${jsPath }/bootstrap.min.js"></script>
 	<script type="text/javascript" src="${jsPath }/layer/layer.js"></script>
 	<style type="text/css">
-		.navbar-nav > li >a:HOVER {
-		    color: #fff;
-    		background-color: #080808 !important;
+		a.gap:hover,a.gap:FOCUS{
+			color: #9d9d9d !important;
+			background-color: #333333 !important;
 		}
-		.navbar-nav > li >a:FOCUS {
-			color: #fff;
+		.brand{
+		    color: #fff !important;
+		}
+		.navbar-nav > li >a:not(.gap):HOVER,a:not(.gap):FOCUS {
+		    color: #fff;
     		background-color: #080808 !important;
 		}
 		.navbar-inverse {
@@ -74,21 +77,20 @@
 		<nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">老哥666</a>
+              <a class="navbar-brand brand" href="#">老哥666</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="#">首页</a></li>
+                <li><a>首页</a></li>
                 <li><a href="#about">聊天室</a></li>
                 <li><a id="promiseMe" href="#">点赞</a></li>
                 <li><a href="${base }/beforeQQLogin.do">QQLogin</a></li>
                 <li><a id="buildpage" href="#">FreeMaker</a></li>
                 <li><a href="#contact">IP：${ipAddr }</a></li>
+                <li><a class="gap">|</a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
               </ul>
-	            <div>
-	            	<span style="float:right !important;color:white;padding-top: 15px;">|</span>
-	            </div>
-            </div>
           </div>
         </nav>
 	<div class="container">
