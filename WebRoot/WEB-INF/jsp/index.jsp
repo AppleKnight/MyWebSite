@@ -84,10 +84,10 @@
                 <li><a>首页</a></li>
                 <li><a href="#about">聊天室</a></li>
                 <li><a id="promiseMe" href="#">点赞</a></li>
-                <li><a href="${base }/beforeQQLogin.do">QQLogin</a></li>
                 <li><a id="buildpage" href="#">FreeMaker</a></li>
                 <li><a href="#contact">IP：${ipAddr }</a></li>
                 <li><a class="gap">|</a></li>
+                <li><a href="${base }/beforeQQLogin.do"><img class="img-responsive" alt="" src="${imgPath }/qqlogin.png" /></a></li>
                 <li><a href="#">登录</a></li>
                 <li><a href="#">注册</a></li>
               </ul>
