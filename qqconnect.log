@@ -1,0 +1,670 @@
+0    DEBUG [2017-07-26 17:43:43]  Get connection for route {s}->https://dm-81.data.aliyun.com
+144  DEBUG [2017-07-26 17:43:43]  Connecting to dm-81.data.aliyun.com:443
+263  DEBUG [2017-07-26 17:43:43]  CookieSpec selected: best-match
+277  DEBUG [2017-07-26 17:43:43]  Auth cache not set in the context
+277  DEBUG [2017-07-26 17:43:43]  Proxy auth state: UNCHALLENGED
+277  DEBUG [2017-07-26 17:43:43]  Attempt 1 to execute request
+278  DEBUG [2017-07-26 17:43:43]  Sending request: GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+279  DEBUG [2017-07-26 17:43:43]  >> "GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1[\r][\n]"
+280  DEBUG [2017-07-26 17:43:43]  >> "Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb[\r][\n]"
+280  DEBUG [2017-07-26 17:43:43]  >> "Host: dm-81.data.aliyun.com[\r][\n]"
+280  DEBUG [2017-07-26 17:43:43]  >> "Connection: Keep-Alive[\r][\n]"
+281  DEBUG [2017-07-26 17:43:43]  >> "User-Agent: Apache-HttpClient/4.2.1 (java 1.5)[\r][\n]"
+281  DEBUG [2017-07-26 17:43:43]  >> "[\r][\n]"
+281  DEBUG [2017-07-26 17:43:43]  >> GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+281  DEBUG [2017-07-26 17:43:43]  >> Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb
+281  DEBUG [2017-07-26 17:43:43]  >> Host: dm-81.data.aliyun.com
+281  DEBUG [2017-07-26 17:43:43]  >> Connection: Keep-Alive
+281  DEBUG [2017-07-26 17:43:43]  >> User-Agent: Apache-HttpClient/4.2.1 (java 1.5)
+343  DEBUG [2017-07-26 17:43:43]  << "HTTP/1.1 200 OK[\r][\n]"
+345  DEBUG [2017-07-26 17:43:43]  << "Server: Tengine[\r][\n]"
+345  DEBUG [2017-07-26 17:43:43]  << "Date: Wed, 26 Jul 2017 09:43:43 GMT[\r][\n]"
+345  DEBUG [2017-07-26 17:43:43]  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+345  DEBUG [2017-07-26 17:43:43]  << "Content-Length: 251[\r][\n]"
+345  DEBUG [2017-07-26 17:43:43]  << "Connection: keep-alive[\r][\n]"
+345  DEBUG [2017-07-26 17:43:43]  << "Access-Control-Allow-Origin: *[\r][\n]"
+345  DEBUG [2017-07-26 17:43:43]  << "Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH[\r][\n]"
+346  DEBUG [2017-07-26 17:43:43]  << "Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5[\r][\n]"
+346  DEBUG [2017-07-26 17:43:43]  << "Access-Control-Max-Age: 172800[\r][\n]"
+346  DEBUG [2017-07-26 17:43:43]  << "X-Ca-Request-Id: 8E82E28F-3D6B-4AA2-B06F-555DD8D887A2[\r][\n]"
+346  DEBUG [2017-07-26 17:43:43]  << "EagleEye-TraceId: 0b83e38415010622232651302eef97[\r][\n]"
+346  DEBUG [2017-07-26 17:43:43]  << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+346  DEBUG [2017-07-26 17:43:43]  << "Timing-Allow-Origin: *[\r][\n]"
+347  DEBUG [2017-07-26 17:43:43]  << "[\r][\n]"
+347  DEBUG [2017-07-26 17:43:43]  Receiving response: HTTP/1.1 200 OK
+347  DEBUG [2017-07-26 17:43:43]  << HTTP/1.1 200 OK
+347  DEBUG [2017-07-26 17:43:43]  << Server: Tengine
+348  DEBUG [2017-07-26 17:43:43]  << Date: Wed, 26 Jul 2017 09:43:43 GMT
+348  DEBUG [2017-07-26 17:43:43]  << Content-Type: application/json;charset=UTF-8
+348  DEBUG [2017-07-26 17:43:43]  << Content-Length: 251
+348  DEBUG [2017-07-26 17:43:43]  << Connection: keep-alive
+348  DEBUG [2017-07-26 17:43:43]  << Access-Control-Allow-Origin: *
+348  DEBUG [2017-07-26 17:43:43]  << Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH
+348  DEBUG [2017-07-26 17:43:43]  << Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5
+348  DEBUG [2017-07-26 17:43:43]  << Access-Control-Max-Age: 172800
+348  DEBUG [2017-07-26 17:43:43]  << X-Ca-Request-Id: 8E82E28F-3D6B-4AA2-B06F-555DD8D887A2
+348  DEBUG [2017-07-26 17:43:43]  << EagleEye-TraceId: 0b83e38415010622232651302eef97
+348  DEBUG [2017-07-26 17:43:43]  << Strict-Transport-Security: max-age=31536000
+348  DEBUG [2017-07-26 17:43:43]  << Timing-Allow-Origin: *
+351  DEBUG [2017-07-26 17:43:43]  Connection can be kept alive indefinitely
+0    DEBUG [2017-07-26 17:44:22]  Get connection for route {s}->https://dm-81.data.aliyun.com
+154  DEBUG [2017-07-26 17:44:23]  Connecting to dm-81.data.aliyun.com:443
+278  DEBUG [2017-07-26 17:44:23]  CookieSpec selected: best-match
+292  DEBUG [2017-07-26 17:44:23]  Auth cache not set in the context
+292  DEBUG [2017-07-26 17:44:23]  Proxy auth state: UNCHALLENGED
+293  DEBUG [2017-07-26 17:44:23]  Attempt 1 to execute request
+293  DEBUG [2017-07-26 17:44:23]  Sending request: GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+293  DEBUG [2017-07-26 17:44:23]  >> "GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1[\r][\n]"
+294  DEBUG [2017-07-26 17:44:23]  >> "Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb[\r][\n]"
+295  DEBUG [2017-07-26 17:44:23]  >> "Host: dm-81.data.aliyun.com[\r][\n]"
+295  DEBUG [2017-07-26 17:44:23]  >> "Connection: Keep-Alive[\r][\n]"
+295  DEBUG [2017-07-26 17:44:23]  >> "User-Agent: Apache-HttpClient/4.2.1 (java 1.5)[\r][\n]"
+295  DEBUG [2017-07-26 17:44:23]  >> "[\r][\n]"
+295  DEBUG [2017-07-26 17:44:23]  >> GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+295  DEBUG [2017-07-26 17:44:23]  >> Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb
+295  DEBUG [2017-07-26 17:44:23]  >> Host: dm-81.data.aliyun.com
+295  DEBUG [2017-07-26 17:44:23]  >> Connection: Keep-Alive
+295  DEBUG [2017-07-26 17:44:23]  >> User-Agent: Apache-HttpClient/4.2.1 (java 1.5)
+324  DEBUG [2017-07-26 17:44:23]  << "HTTP/1.1 200 OK[\r][\n]"
+326  DEBUG [2017-07-26 17:44:23]  << "Server: Tengine[\r][\n]"
+326  DEBUG [2017-07-26 17:44:23]  << "Date: Wed, 26 Jul 2017 09:44:23 GMT[\r][\n]"
+326  DEBUG [2017-07-26 17:44:23]  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+326  DEBUG [2017-07-26 17:44:23]  << "Content-Length: 251[\r][\n]"
+326  DEBUG [2017-07-26 17:44:23]  << "Connection: keep-alive[\r][\n]"
+326  DEBUG [2017-07-26 17:44:23]  << "Access-Control-Allow-Origin: *[\r][\n]"
+326  DEBUG [2017-07-26 17:44:23]  << "Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH[\r][\n]"
+326  DEBUG [2017-07-26 17:44:23]  << "Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5[\r][\n]"
+326  DEBUG [2017-07-26 17:44:23]  << "Access-Control-Max-Age: 172800[\r][\n]"
+327  DEBUG [2017-07-26 17:44:23]  << "X-Ca-Request-Id: 466E4D1F-BE43-4F25-A340-C8EC15FDD269[\r][\n]"
+327  DEBUG [2017-07-26 17:44:23]  << "EagleEye-TraceId: 0b802d1b15010622631236339e3837[\r][\n]"
+327  DEBUG [2017-07-26 17:44:23]  << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+327  DEBUG [2017-07-26 17:44:23]  << "Timing-Allow-Origin: *[\r][\n]"
+327  DEBUG [2017-07-26 17:44:23]  << "[\r][\n]"
+328  DEBUG [2017-07-26 17:44:23]  Receiving response: HTTP/1.1 200 OK
+328  DEBUG [2017-07-26 17:44:23]  << HTTP/1.1 200 OK
+328  DEBUG [2017-07-26 17:44:23]  << Server: Tengine
+328  DEBUG [2017-07-26 17:44:23]  << Date: Wed, 26 Jul 2017 09:44:23 GMT
+328  DEBUG [2017-07-26 17:44:23]  << Content-Type: application/json;charset=UTF-8
+328  DEBUG [2017-07-26 17:44:23]  << Content-Length: 251
+328  DEBUG [2017-07-26 17:44:23]  << Connection: keep-alive
+328  DEBUG [2017-07-26 17:44:23]  << Access-Control-Allow-Origin: *
+328  DEBUG [2017-07-26 17:44:23]  << Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH
+328  DEBUG [2017-07-26 17:44:23]  << Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5
+329  DEBUG [2017-07-26 17:44:23]  << Access-Control-Max-Age: 172800
+329  DEBUG [2017-07-26 17:44:23]  << X-Ca-Request-Id: 466E4D1F-BE43-4F25-A340-C8EC15FDD269
+329  DEBUG [2017-07-26 17:44:23]  << EagleEye-TraceId: 0b802d1b15010622631236339e3837
+329  DEBUG [2017-07-26 17:44:23]  << Strict-Transport-Security: max-age=31536000
+329  DEBUG [2017-07-26 17:44:23]  << Timing-Allow-Origin: *
+332  DEBUG [2017-07-26 17:44:23]  Connection can be kept alive indefinitely
+0    DEBUG [2017-07-26 17:45:07]  Get connection for route {s}->https://dm-81.data.aliyun.com
+111  DEBUG [2017-07-26 17:45:07]  Connecting to dm-81.data.aliyun.com:443
+244  DEBUG [2017-07-26 17:45:07]  CookieSpec selected: best-match
+255  DEBUG [2017-07-26 17:45:07]  Auth cache not set in the context
+255  DEBUG [2017-07-26 17:45:07]  Proxy auth state: UNCHALLENGED
+256  DEBUG [2017-07-26 17:45:07]  Attempt 1 to execute request
+256  DEBUG [2017-07-26 17:45:07]  Sending request: GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+256  DEBUG [2017-07-26 17:45:07]  >> "GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1[\r][\n]"
+257  DEBUG [2017-07-26 17:45:07]  >> "Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb[\r][\n]"
+257  DEBUG [2017-07-26 17:45:07]  >> "Host: dm-81.data.aliyun.com[\r][\n]"
+258  DEBUG [2017-07-26 17:45:07]  >> "Connection: Keep-Alive[\r][\n]"
+258  DEBUG [2017-07-26 17:45:07]  >> "User-Agent: Apache-HttpClient/4.2.1 (java 1.5)[\r][\n]"
+258  DEBUG [2017-07-26 17:45:07]  >> "[\r][\n]"
+258  DEBUG [2017-07-26 17:45:07]  >> GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+258  DEBUG [2017-07-26 17:45:07]  >> Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb
+258  DEBUG [2017-07-26 17:45:07]  >> Host: dm-81.data.aliyun.com
+258  DEBUG [2017-07-26 17:45:07]  >> Connection: Keep-Alive
+259  DEBUG [2017-07-26 17:45:07]  >> User-Agent: Apache-HttpClient/4.2.1 (java 1.5)
+292  DEBUG [2017-07-26 17:45:07]  << "HTTP/1.1 200 OK[\r][\n]"
+293  DEBUG [2017-07-26 17:45:07]  << "Server: Tengine[\r][\n]"
+293  DEBUG [2017-07-26 17:45:07]  << "Date: Wed, 26 Jul 2017 09:45:07 GMT[\r][\n]"
+293  DEBUG [2017-07-26 17:45:07]  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+293  DEBUG [2017-07-26 17:45:07]  << "Content-Length: 251[\r][\n]"
+294  DEBUG [2017-07-26 17:45:07]  << "Connection: keep-alive[\r][\n]"
+294  DEBUG [2017-07-26 17:45:07]  << "Access-Control-Allow-Origin: *[\r][\n]"
+294  DEBUG [2017-07-26 17:45:07]  << "Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH[\r][\n]"
+294  DEBUG [2017-07-26 17:45:07]  << "Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5[\r][\n]"
+294  DEBUG [2017-07-26 17:45:07]  << "Access-Control-Max-Age: 172800[\r][\n]"
+294  DEBUG [2017-07-26 17:45:07]  << "X-Ca-Request-Id: 4ABF8A66-B9A4-4988-8805-6B64265877E5[\r][\n]"
+294  DEBUG [2017-07-26 17:45:07]  << "EagleEye-TraceId: 0bfb832715010623072345758e6024[\r][\n]"
+294  DEBUG [2017-07-26 17:45:07]  << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+294  DEBUG [2017-07-26 17:45:07]  << "Timing-Allow-Origin: *[\r][\n]"
+294  DEBUG [2017-07-26 17:45:07]  << "[\r][\n]"
+295  DEBUG [2017-07-26 17:45:07]  Receiving response: HTTP/1.1 200 OK
+295  DEBUG [2017-07-26 17:45:07]  << HTTP/1.1 200 OK
+295  DEBUG [2017-07-26 17:45:07]  << Server: Tengine
+295  DEBUG [2017-07-26 17:45:07]  << Date: Wed, 26 Jul 2017 09:45:07 GMT
+295  DEBUG [2017-07-26 17:45:07]  << Content-Type: application/json;charset=UTF-8
+295  DEBUG [2017-07-26 17:45:07]  << Content-Length: 251
+295  DEBUG [2017-07-26 17:45:07]  << Connection: keep-alive
+295  DEBUG [2017-07-26 17:45:07]  << Access-Control-Allow-Origin: *
+295  DEBUG [2017-07-26 17:45:07]  << Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH
+295  DEBUG [2017-07-26 17:45:07]  << Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5
+295  DEBUG [2017-07-26 17:45:07]  << Access-Control-Max-Age: 172800
+295  DEBUG [2017-07-26 17:45:07]  << X-Ca-Request-Id: 4ABF8A66-B9A4-4988-8805-6B64265877E5
+296  DEBUG [2017-07-26 17:45:07]  << EagleEye-TraceId: 0bfb832715010623072345758e6024
+296  DEBUG [2017-07-26 17:45:07]  << Strict-Transport-Security: max-age=31536000
+296  DEBUG [2017-07-26 17:45:07]  << Timing-Allow-Origin: *
+298  DEBUG [2017-07-26 17:45:07]  Connection can be kept alive indefinitely
+0    DEBUG [2017-07-26 17:45:53]  Get connection for route {s}->https://dm-81.data.aliyun.com
+107  DEBUG [2017-07-26 17:45:53]  Connecting to dm-81.data.aliyun.com:443
+240  DEBUG [2017-07-26 17:45:53]  CookieSpec selected: best-match
+255  DEBUG [2017-07-26 17:45:53]  Auth cache not set in the context
+255  DEBUG [2017-07-26 17:45:53]  Proxy auth state: UNCHALLENGED
+256  DEBUG [2017-07-26 17:45:53]  Attempt 1 to execute request
+256  DEBUG [2017-07-26 17:45:53]  Sending request: GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+257  DEBUG [2017-07-26 17:45:53]  >> "GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1[\r][\n]"
+259  DEBUG [2017-07-26 17:45:53]  >> "Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb[\r][\n]"
+259  DEBUG [2017-07-26 17:45:53]  >> "Host: dm-81.data.aliyun.com[\r][\n]"
+259  DEBUG [2017-07-26 17:45:53]  >> "Connection: Keep-Alive[\r][\n]"
+259  DEBUG [2017-07-26 17:45:53]  >> "User-Agent: Apache-HttpClient/4.2.1 (java 1.5)[\r][\n]"
+259  DEBUG [2017-07-26 17:45:53]  >> "[\r][\n]"
+259  DEBUG [2017-07-26 17:45:53]  >> GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+260  DEBUG [2017-07-26 17:45:53]  >> Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb
+260  DEBUG [2017-07-26 17:45:53]  >> Host: dm-81.data.aliyun.com
+260  DEBUG [2017-07-26 17:45:53]  >> Connection: Keep-Alive
+260  DEBUG [2017-07-26 17:45:53]  >> User-Agent: Apache-HttpClient/4.2.1 (java 1.5)
+288  DEBUG [2017-07-26 17:45:53]  << "HTTP/1.1 200 OK[\r][\n]"
+289  DEBUG [2017-07-26 17:45:53]  << "Server: Tengine[\r][\n]"
+289  DEBUG [2017-07-26 17:45:53]  << "Date: Wed, 26 Jul 2017 09:45:53 GMT[\r][\n]"
+289  DEBUG [2017-07-26 17:45:53]  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+289  DEBUG [2017-07-26 17:45:53]  << "Content-Length: 251[\r][\n]"
+289  DEBUG [2017-07-26 17:45:53]  << "Connection: keep-alive[\r][\n]"
+290  DEBUG [2017-07-26 17:45:53]  << "Access-Control-Allow-Origin: *[\r][\n]"
+290  DEBUG [2017-07-26 17:45:53]  << "Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH[\r][\n]"
+290  DEBUG [2017-07-26 17:45:53]  << "Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5[\r][\n]"
+290  DEBUG [2017-07-26 17:45:53]  << "Access-Control-Max-Age: 172800[\r][\n]"
+290  DEBUG [2017-07-26 17:45:53]  << "X-Ca-Request-Id: 944D8DBB-3A37-4EE0-8286-82271B84FEB5[\r][\n]"
+290  DEBUG [2017-07-26 17:45:53]  << "Timing-Allow-Origin: *[\r][\n]"
+290  DEBUG [2017-07-26 17:45:53]  << "EagleEye-TraceId: 0bfb835b15010623532061534e607f[\r][\n]"
+290  DEBUG [2017-07-26 17:45:53]  << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+290  DEBUG [2017-07-26 17:45:53]  << "[\r][\n]"
+291  DEBUG [2017-07-26 17:45:53]  Receiving response: HTTP/1.1 200 OK
+291  DEBUG [2017-07-26 17:45:53]  << HTTP/1.1 200 OK
+291  DEBUG [2017-07-26 17:45:53]  << Server: Tengine
+292  DEBUG [2017-07-26 17:45:53]  << Date: Wed, 26 Jul 2017 09:45:53 GMT
+292  DEBUG [2017-07-26 17:45:53]  << Content-Type: application/json;charset=UTF-8
+292  DEBUG [2017-07-26 17:45:53]  << Content-Length: 251
+292  DEBUG [2017-07-26 17:45:53]  << Connection: keep-alive
+292  DEBUG [2017-07-26 17:45:53]  << Access-Control-Allow-Origin: *
+292  DEBUG [2017-07-26 17:45:53]  << Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH
+292  DEBUG [2017-07-26 17:45:53]  << Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5
+292  DEBUG [2017-07-26 17:45:53]  << Access-Control-Max-Age: 172800
+292  DEBUG [2017-07-26 17:45:53]  << X-Ca-Request-Id: 944D8DBB-3A37-4EE0-8286-82271B84FEB5
+292  DEBUG [2017-07-26 17:45:53]  << Timing-Allow-Origin: *
+293  DEBUG [2017-07-26 17:45:53]  << EagleEye-TraceId: 0bfb835b15010623532061534e607f
+293  DEBUG [2017-07-26 17:45:53]  << Strict-Transport-Security: max-age=31536000
+297  DEBUG [2017-07-26 17:45:53]  Connection can be kept alive indefinitely
+301  DEBUG [2017-07-26 17:45:53]  << "{"code":0,"data":{"area":"[0xe5][0x8d][0x8e][0xe4][0xb8][0x9c]","area_id":"300000","city":"[0xe5][0x8d][0x97][0xe4][0xba][0xac][0xe5][0xb8][0x82]","city_id":"320100","country":"[0xe4][0xb8][0xad][0xe5][0x9b][0xbd]","country_id":"CN","county":"","county_id":"","ip":"36.149.2.106","isp":"[0xe7][0xa7][0xbb][0xe5][0x8a][0xa8]","isp_id":"100025","region":"[0xe6][0xb1][0x9f][0xe8][0x8b][0x8f][0xe7][0x9c][0x81]","region_id":"320000"}}"
+301  DEBUG [2017-07-26 17:45:53]  Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@747e6024
+301  DEBUG [2017-07-26 17:45:53]  Connection can be kept alive indefinitely
+0    DEBUG [2017-07-26 18:04:53]  Get connection for route {s}->https://dm-81.data.aliyun.com
+132  DEBUG [2017-07-26 18:04:53]  Connecting to dm-81.data.aliyun.com:443
+251  DEBUG [2017-07-26 18:04:53]  CookieSpec selected: best-match
+261  DEBUG [2017-07-26 18:04:53]  Auth cache not set in the context
+261  DEBUG [2017-07-26 18:04:53]  Proxy auth state: UNCHALLENGED
+262  DEBUG [2017-07-26 18:04:53]  Attempt 1 to execute request
+263  DEBUG [2017-07-26 18:04:53]  Sending request: GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+263  DEBUG [2017-07-26 18:04:53]  >> "GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1[\r][\n]"
+264  DEBUG [2017-07-26 18:04:53]  >> "Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb[\r][\n]"
+264  DEBUG [2017-07-26 18:04:53]  >> "Host: dm-81.data.aliyun.com[\r][\n]"
+264  DEBUG [2017-07-26 18:04:53]  >> "Connection: Keep-Alive[\r][\n]"
+265  DEBUG [2017-07-26 18:04:53]  >> "User-Agent: Apache-HttpClient/4.2.1 (java 1.5)[\r][\n]"
+265  DEBUG [2017-07-26 18:04:53]  >> "[\r][\n]"
+265  DEBUG [2017-07-26 18:04:53]  >> GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+265  DEBUG [2017-07-26 18:04:53]  >> Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb
+265  DEBUG [2017-07-26 18:04:53]  >> Host: dm-81.data.aliyun.com
+265  DEBUG [2017-07-26 18:04:53]  >> Connection: Keep-Alive
+265  DEBUG [2017-07-26 18:04:53]  >> User-Agent: Apache-HttpClient/4.2.1 (java 1.5)
+295  DEBUG [2017-07-26 18:04:53]  << "HTTP/1.1 200 OK[\r][\n]"
+297  DEBUG [2017-07-26 18:04:53]  << "Server: Tengine[\r][\n]"
+297  DEBUG [2017-07-26 18:04:53]  << "Date: Wed, 26 Jul 2017 10:04:53 GMT[\r][\n]"
+297  DEBUG [2017-07-26 18:04:53]  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+297  DEBUG [2017-07-26 18:04:53]  << "Content-Length: 251[\r][\n]"
+297  DEBUG [2017-07-26 18:04:53]  << "Connection: keep-alive[\r][\n]"
+297  DEBUG [2017-07-26 18:04:53]  << "Access-Control-Allow-Origin: *[\r][\n]"
+298  DEBUG [2017-07-26 18:04:53]  << "Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH[\r][\n]"
+298  DEBUG [2017-07-26 18:04:53]  << "Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5[\r][\n]"
+298  DEBUG [2017-07-26 18:04:53]  << "Access-Control-Max-Age: 172800[\r][\n]"
+298  DEBUG [2017-07-26 18:04:53]  << "X-Ca-Request-Id: 0F313E0F-9DE8-4011-A8F5-06B7EB241128[\r][\n]"
+298  DEBUG [2017-07-26 18:04:53]  << "EagleEye-TraceId: 0b802ac615010634931912253e1661[\r][\n]"
+298  DEBUG [2017-07-26 18:04:53]  << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+298  DEBUG [2017-07-26 18:04:53]  << "Timing-Allow-Origin: *[\r][\n]"
+298  DEBUG [2017-07-26 18:04:53]  << "[\r][\n]"
+299  DEBUG [2017-07-26 18:04:53]  Receiving response: HTTP/1.1 200 OK
+299  DEBUG [2017-07-26 18:04:53]  << HTTP/1.1 200 OK
+299  DEBUG [2017-07-26 18:04:53]  << Server: Tengine
+299  DEBUG [2017-07-26 18:04:53]  << Date: Wed, 26 Jul 2017 10:04:53 GMT
+299  DEBUG [2017-07-26 18:04:53]  << Content-Type: application/json;charset=UTF-8
+299  DEBUG [2017-07-26 18:04:53]  << Content-Length: 251
+299  DEBUG [2017-07-26 18:04:53]  << Connection: keep-alive
+299  DEBUG [2017-07-26 18:04:53]  << Access-Control-Allow-Origin: *
+299  DEBUG [2017-07-26 18:04:53]  << Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH
+299  DEBUG [2017-07-26 18:04:53]  << Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5
+300  DEBUG [2017-07-26 18:04:53]  << Access-Control-Max-Age: 172800
+300  DEBUG [2017-07-26 18:04:53]  << X-Ca-Request-Id: 0F313E0F-9DE8-4011-A8F5-06B7EB241128
+300  DEBUG [2017-07-26 18:04:53]  << EagleEye-TraceId: 0b802ac615010634931912253e1661
+300  DEBUG [2017-07-26 18:04:53]  << Strict-Transport-Security: max-age=31536000
+300  DEBUG [2017-07-26 18:04:53]  << Timing-Allow-Origin: *
+302  DEBUG [2017-07-26 18:04:53]  Connection can be kept alive indefinitely
+307  DEBUG [2017-07-26 18:04:53]  << "{"code":0,"data":{"area":"[0xe5][0x8d][0x8e][0xe4][0xb8][0x9c]","area_id":"300000","city":"[0xe5][0x8d][0x97][0xe4][0xba][0xac][0xe5][0xb8][0x82]","city_id":"320100","country":"[0xe4][0xb8][0xad][0xe5][0x9b][0xbd]","country_id":"CN","county":"","county_id":"","ip":"36.149.2.106","isp":"[0xe7][0xa7][0xbb][0xe5][0x8a][0xa8]","isp_id":"100025","region":"[0xe6][0xb1][0x9f][0xe8][0x8b][0x8f][0xe7][0x9c][0x81]","region_id":"320000"}}"
+307  DEBUG [2017-07-26 18:04:53]  Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@38716387
+308  DEBUG [2017-07-26 18:04:53]  Connection can be kept alive indefinitely
+0    DEBUG [2017-07-26 18:06:29]  Get connection for route {s}->https://dm-81.data.aliyun.com
+115  DEBUG [2017-07-26 18:06:29]  Connecting to dm-81.data.aliyun.com:443
+242  DEBUG [2017-07-26 18:06:30]  CookieSpec selected: best-match
+254  DEBUG [2017-07-26 18:06:30]  Auth cache not set in the context
+254  DEBUG [2017-07-26 18:06:30]  Proxy auth state: UNCHALLENGED
+254  DEBUG [2017-07-26 18:06:30]  Attempt 1 to execute request
+255  DEBUG [2017-07-26 18:06:30]  Sending request: GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+255  DEBUG [2017-07-26 18:06:30]  >> "GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1[\r][\n]"
+256  DEBUG [2017-07-26 18:06:30]  >> "Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb[\r][\n]"
+256  DEBUG [2017-07-26 18:06:30]  >> "Host: dm-81.data.aliyun.com[\r][\n]"
+256  DEBUG [2017-07-26 18:06:30]  >> "Connection: Keep-Alive[\r][\n]"
+256  DEBUG [2017-07-26 18:06:30]  >> "User-Agent: Apache-HttpClient/4.2.1 (java 1.5)[\r][\n]"
+256  DEBUG [2017-07-26 18:06:30]  >> "[\r][\n]"
+257  DEBUG [2017-07-26 18:06:30]  >> GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+257  DEBUG [2017-07-26 18:06:30]  >> Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb
+257  DEBUG [2017-07-26 18:06:30]  >> Host: dm-81.data.aliyun.com
+257  DEBUG [2017-07-26 18:06:30]  >> Connection: Keep-Alive
+257  DEBUG [2017-07-26 18:06:30]  >> User-Agent: Apache-HttpClient/4.2.1 (java 1.5)
+282  DEBUG [2017-07-26 18:06:30]  << "HTTP/1.1 200 OK[\r][\n]"
+283  DEBUG [2017-07-26 18:06:30]  << "Server: Tengine[\r][\n]"
+283  DEBUG [2017-07-26 18:06:30]  << "Date: Wed, 26 Jul 2017 10:06:29 GMT[\r][\n]"
+284  DEBUG [2017-07-26 18:06:30]  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+284  DEBUG [2017-07-26 18:06:30]  << "Content-Length: 251[\r][\n]"
+284  DEBUG [2017-07-26 18:06:30]  << "Connection: keep-alive[\r][\n]"
+284  DEBUG [2017-07-26 18:06:30]  << "Access-Control-Allow-Origin: *[\r][\n]"
+284  DEBUG [2017-07-26 18:06:30]  << "Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH[\r][\n]"
+284  DEBUG [2017-07-26 18:06:30]  << "Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5[\r][\n]"
+284  DEBUG [2017-07-26 18:06:30]  << "Access-Control-Max-Age: 172800[\r][\n]"
+284  DEBUG [2017-07-26 18:06:30]  << "X-Ca-Request-Id: 73800DA6-8D2E-4BB1-8CC7-B7312A2877AF[\r][\n]"
+284  DEBUG [2017-07-26 18:06:30]  << "EagleEye-TraceId: 0bfb82f515010635898231266e412a[\r][\n]"
+284  DEBUG [2017-07-26 18:06:30]  << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+284  DEBUG [2017-07-26 18:06:30]  << "Timing-Allow-Origin: *[\r][\n]"
+285  DEBUG [2017-07-26 18:06:30]  << "[\r][\n]"
+285  DEBUG [2017-07-26 18:06:30]  Receiving response: HTTP/1.1 200 OK
+285  DEBUG [2017-07-26 18:06:30]  << HTTP/1.1 200 OK
+286  DEBUG [2017-07-26 18:06:30]  << Server: Tengine
+286  DEBUG [2017-07-26 18:06:30]  << Date: Wed, 26 Jul 2017 10:06:29 GMT
+286  DEBUG [2017-07-26 18:06:30]  << Content-Type: application/json;charset=UTF-8
+286  DEBUG [2017-07-26 18:06:30]  << Content-Length: 251
+286  DEBUG [2017-07-26 18:06:30]  << Connection: keep-alive
+286  DEBUG [2017-07-26 18:06:30]  << Access-Control-Allow-Origin: *
+286  DEBUG [2017-07-26 18:06:30]  << Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH
+286  DEBUG [2017-07-26 18:06:30]  << Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5
+286  DEBUG [2017-07-26 18:06:30]  << Access-Control-Max-Age: 172800
+286  DEBUG [2017-07-26 18:06:30]  << X-Ca-Request-Id: 73800DA6-8D2E-4BB1-8CC7-B7312A2877AF
+286  DEBUG [2017-07-26 18:06:30]  << EagleEye-TraceId: 0bfb82f515010635898231266e412a
+286  DEBUG [2017-07-26 18:06:30]  << Strict-Transport-Security: max-age=31536000
+286  DEBUG [2017-07-26 18:06:30]  << Timing-Allow-Origin: *
+289  DEBUG [2017-07-26 18:06:30]  Connection can be kept alive indefinitely
+293  DEBUG [2017-07-26 18:06:30]  << "{"code":0,"data":{"area":"[0xe5][0x8d][0x8e][0xe4][0xb8][0x9c]","area_id":"300000","city":"[0xe5][0x8d][0x97][0xe4][0xba][0xac][0xe5][0xb8][0x82]","city_id":"320100","country":"[0xe4][0xb8][0xad][0xe5][0x9b][0xbd]","country_id":"CN","county":"","county_id":"","ip":"36.149.2.106","isp":"[0xe7][0xa7][0xbb][0xe5][0x8a][0xa8]","isp_id":"100025","region":"[0xe6][0xb1][0x9f][0xe8][0x8b][0x8f][0xe7][0x9c][0x81]","region_id":"320000"}}"
+294  DEBUG [2017-07-26 18:06:30]  Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4dc07801
+294  DEBUG [2017-07-26 18:06:30]  Connection can be kept alive indefinitely
+0    DEBUG [2017-07-26 18:07:44]  Get connection for route {s}->https://dm-81.data.aliyun.com
+111  DEBUG [2017-07-26 18:07:44]  Connecting to dm-81.data.aliyun.com:443
+230  DEBUG [2017-07-26 18:07:45]  CookieSpec selected: best-match
+244  DEBUG [2017-07-26 18:07:45]  Auth cache not set in the context
+244  DEBUG [2017-07-26 18:07:45]  Proxy auth state: UNCHALLENGED
+245  DEBUG [2017-07-26 18:07:45]  Attempt 1 to execute request
+245  DEBUG [2017-07-26 18:07:45]  Sending request: GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+246  DEBUG [2017-07-26 18:07:45]  >> "GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1[\r][\n]"
+247  DEBUG [2017-07-26 18:07:45]  >> "Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb[\r][\n]"
+247  DEBUG [2017-07-26 18:07:45]  >> "Host: dm-81.data.aliyun.com[\r][\n]"
+247  DEBUG [2017-07-26 18:07:45]  >> "Connection: Keep-Alive[\r][\n]"
+247  DEBUG [2017-07-26 18:07:45]  >> "User-Agent: Apache-HttpClient/4.2.1 (java 1.5)[\r][\n]"
+247  DEBUG [2017-07-26 18:07:45]  >> "[\r][\n]"
+247  DEBUG [2017-07-26 18:07:45]  >> GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+247  DEBUG [2017-07-26 18:07:45]  >> Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb
+247  DEBUG [2017-07-26 18:07:45]  >> Host: dm-81.data.aliyun.com
+247  DEBUG [2017-07-26 18:07:45]  >> Connection: Keep-Alive
+247  DEBUG [2017-07-26 18:07:45]  >> User-Agent: Apache-HttpClient/4.2.1 (java 1.5)
+281  DEBUG [2017-07-26 18:07:45]  << "HTTP/1.1 200 OK[\r][\n]"
+282  DEBUG [2017-07-26 18:07:45]  << "Server: Tengine[\r][\n]"
+282  DEBUG [2017-07-26 18:07:45]  << "Date: Wed, 26 Jul 2017 10:07:44 GMT[\r][\n]"
+283  DEBUG [2017-07-26 18:07:45]  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+283  DEBUG [2017-07-26 18:07:45]  << "Content-Length: 251[\r][\n]"
+283  DEBUG [2017-07-26 18:07:45]  << "Connection: keep-alive[\r][\n]"
+283  DEBUG [2017-07-26 18:07:45]  << "Access-Control-Allow-Origin: *[\r][\n]"
+283  DEBUG [2017-07-26 18:07:45]  << "Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH[\r][\n]"
+283  DEBUG [2017-07-26 18:07:45]  << "Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5[\r][\n]"
+283  DEBUG [2017-07-26 18:07:45]  << "Access-Control-Max-Age: 172800[\r][\n]"
+283  DEBUG [2017-07-26 18:07:45]  << "X-Ca-Request-Id: B9445BAA-F913-4BF5-B5FA-6DBD85AF0F3E[\r][\n]"
+283  DEBUG [2017-07-26 18:07:45]  << "EagleEye-TraceId: 0b83e2a515010636648993259e4839[\r][\n]"
+283  DEBUG [2017-07-26 18:07:45]  << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+283  DEBUG [2017-07-26 18:07:45]  << "Timing-Allow-Origin: *[\r][\n]"
+283  DEBUG [2017-07-26 18:07:45]  << "[\r][\n]"
+284  DEBUG [2017-07-26 18:07:45]  Receiving response: HTTP/1.1 200 OK
+284  DEBUG [2017-07-26 18:07:45]  << HTTP/1.1 200 OK
+284  DEBUG [2017-07-26 18:07:45]  << Server: Tengine
+284  DEBUG [2017-07-26 18:07:45]  << Date: Wed, 26 Jul 2017 10:07:44 GMT
+284  DEBUG [2017-07-26 18:07:45]  << Content-Type: application/json;charset=UTF-8
+284  DEBUG [2017-07-26 18:07:45]  << Content-Length: 251
+284  DEBUG [2017-07-26 18:07:45]  << Connection: keep-alive
+284  DEBUG [2017-07-26 18:07:45]  << Access-Control-Allow-Origin: *
+284  DEBUG [2017-07-26 18:07:45]  << Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH
+285  DEBUG [2017-07-26 18:07:45]  << Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5
+285  DEBUG [2017-07-26 18:07:45]  << Access-Control-Max-Age: 172800
+285  DEBUG [2017-07-26 18:07:45]  << X-Ca-Request-Id: B9445BAA-F913-4BF5-B5FA-6DBD85AF0F3E
+285  DEBUG [2017-07-26 18:07:45]  << EagleEye-TraceId: 0b83e2a515010636648993259e4839
+285  DEBUG [2017-07-26 18:07:45]  << Strict-Transport-Security: max-age=31536000
+285  DEBUG [2017-07-26 18:07:45]  << Timing-Allow-Origin: *
+287  DEBUG [2017-07-26 18:07:45]  Connection can be kept alive indefinitely
+292  DEBUG [2017-07-26 18:07:45]  << "{"code":0,"data":{"area":"[0xe5][0x8d][0x8e][0xe4][0xb8][0x9c]","area_id":"300000","city":"[0xe5][0x8d][0x97][0xe4][0xba][0xac][0xe5][0xb8][0x82]","city_id":"320100","country":"[0xe4][0xb8][0xad][0xe5][0x9b][0xbd]","country_id":"CN","county":"","county_id":"","ip":"36.149.2.106","isp":"[0xe7][0xa7][0xbb][0xe5][0x8a][0xa8]","isp_id":"100025","region":"[0xe6][0xb1][0x9f][0xe8][0x8b][0x8f][0xe7][0x9c][0x81]","region_id":"320000"}}"
+293  DEBUG [2017-07-26 18:07:45]  Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4dc07801
+293  DEBUG [2017-07-26 18:07:45]  Connection can be kept alive indefinitely
+1    DEBUG [2017-07-26 18:08:40]  Get connection for route {s}->https://dm-81.data.aliyun.com
+115  DEBUG [2017-07-26 18:08:40]  Connecting to dm-81.data.aliyun.com:443
+236  DEBUG [2017-07-26 18:08:40]  CookieSpec selected: best-match
+250  DEBUG [2017-07-26 18:08:40]  Auth cache not set in the context
+250  DEBUG [2017-07-26 18:08:40]  Proxy auth state: UNCHALLENGED
+251  DEBUG [2017-07-26 18:08:40]  Attempt 1 to execute request
+252  DEBUG [2017-07-26 18:08:40]  Sending request: GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+253  DEBUG [2017-07-26 18:08:40]  >> "GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1[\r][\n]"
+254  DEBUG [2017-07-26 18:08:40]  >> "Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb[\r][\n]"
+254  DEBUG [2017-07-26 18:08:40]  >> "Host: dm-81.data.aliyun.com[\r][\n]"
+254  DEBUG [2017-07-26 18:08:40]  >> "Connection: Keep-Alive[\r][\n]"
+254  DEBUG [2017-07-26 18:08:40]  >> "User-Agent: Apache-HttpClient/4.2.1 (java 1.5)[\r][\n]"
+255  DEBUG [2017-07-26 18:08:40]  >> "[\r][\n]"
+255  DEBUG [2017-07-26 18:08:40]  >> GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+255  DEBUG [2017-07-26 18:08:40]  >> Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb
+255  DEBUG [2017-07-26 18:08:40]  >> Host: dm-81.data.aliyun.com
+255  DEBUG [2017-07-26 18:08:40]  >> Connection: Keep-Alive
+255  DEBUG [2017-07-26 18:08:40]  >> User-Agent: Apache-HttpClient/4.2.1 (java 1.5)
+282  DEBUG [2017-07-26 18:08:40]  << "HTTP/1.1 200 OK[\r][\n]"
+283  DEBUG [2017-07-26 18:08:40]  << "Server: Tengine[\r][\n]"
+284  DEBUG [2017-07-26 18:08:40]  << "Date: Wed, 26 Jul 2017 10:08:40 GMT[\r][\n]"
+284  DEBUG [2017-07-26 18:08:40]  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+284  DEBUG [2017-07-26 18:08:40]  << "Content-Length: 251[\r][\n]"
+284  DEBUG [2017-07-26 18:08:40]  << "Connection: keep-alive[\r][\n]"
+284  DEBUG [2017-07-26 18:08:40]  << "Access-Control-Allow-Origin: *[\r][\n]"
+284  DEBUG [2017-07-26 18:08:40]  << "Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH[\r][\n]"
+284  DEBUG [2017-07-26 18:08:40]  << "Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5[\r][\n]"
+284  DEBUG [2017-07-26 18:08:40]  << "Access-Control-Max-Age: 172800[\r][\n]"
+284  DEBUG [2017-07-26 18:08:40]  << "X-Ca-Request-Id: 33B40522-E5BC-461D-97D0-A347C3777FD2[\r][\n]"
+284  DEBUG [2017-07-26 18:08:40]  << "EagleEye-TraceId: 0b802cd715010637202041842e4d0f[\r][\n]"
+284  DEBUG [2017-07-26 18:08:40]  << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+284  DEBUG [2017-07-26 18:08:40]  << "Timing-Allow-Origin: *[\r][\n]"
+285  DEBUG [2017-07-26 18:08:40]  << "[\r][\n]"
+285  DEBUG [2017-07-26 18:08:40]  Receiving response: HTTP/1.1 200 OK
+285  DEBUG [2017-07-26 18:08:40]  << HTTP/1.1 200 OK
+285  DEBUG [2017-07-26 18:08:40]  << Server: Tengine
+285  DEBUG [2017-07-26 18:08:40]  << Date: Wed, 26 Jul 2017 10:08:40 GMT
+285  DEBUG [2017-07-26 18:08:40]  << Content-Type: application/json;charset=UTF-8
+285  DEBUG [2017-07-26 18:08:40]  << Content-Length: 251
+286  DEBUG [2017-07-26 18:08:40]  << Connection: keep-alive
+286  DEBUG [2017-07-26 18:08:40]  << Access-Control-Allow-Origin: *
+286  DEBUG [2017-07-26 18:08:40]  << Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH
+286  DEBUG [2017-07-26 18:08:40]  << Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5
+286  DEBUG [2017-07-26 18:08:40]  << Access-Control-Max-Age: 172800
+286  DEBUG [2017-07-26 18:08:40]  << X-Ca-Request-Id: 33B40522-E5BC-461D-97D0-A347C3777FD2
+286  DEBUG [2017-07-26 18:08:40]  << EagleEye-TraceId: 0b802cd715010637202041842e4d0f
+286  DEBUG [2017-07-26 18:08:40]  << Strict-Transport-Security: max-age=31536000
+286  DEBUG [2017-07-26 18:08:40]  << Timing-Allow-Origin: *
+288  DEBUG [2017-07-26 18:08:40]  Connection can be kept alive indefinitely
+293  DEBUG [2017-07-26 18:08:40]  << "{"code":0,"data":{"area":"[0xe5][0x8d][0x8e][0xe4][0xb8][0x9c]","area_id":"300000","city":"[0xe5][0x8d][0x97][0xe4][0xba][0xac][0xe5][0xb8][0x82]","city_id":"320100","country":"[0xe4][0xb8][0xad][0xe5][0x9b][0xbd]","country_id":"CN","county":"","county_id":"","ip":"36.149.2.106","isp":"[0xe7][0xa7][0xbb][0xe5][0x8a][0xa8]","isp_id":"100025","region":"[0xe6][0xb1][0x9f][0xe8][0x8b][0x8f][0xe7][0x9c][0x81]","region_id":"320000"}}"
+293  DEBUG [2017-07-26 18:08:40]  Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@601f7f3e
+294  DEBUG [2017-07-26 18:08:40]  Connection can be kept alive indefinitely
+0    DEBUG [2017-07-26 18:09:26]  Get connection for route {s}->https://dm-81.data.aliyun.com
+111  DEBUG [2017-07-26 18:09:27]  Connecting to dm-81.data.aliyun.com:443
+240  DEBUG [2017-07-26 18:09:27]  CookieSpec selected: best-match
+252  DEBUG [2017-07-26 18:09:27]  Auth cache not set in the context
+253  DEBUG [2017-07-26 18:09:27]  Proxy auth state: UNCHALLENGED
+253  DEBUG [2017-07-26 18:09:27]  Attempt 1 to execute request
+254  DEBUG [2017-07-26 18:09:27]  Sending request: GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+254  DEBUG [2017-07-26 18:09:27]  >> "GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1[\r][\n]"
+256  DEBUG [2017-07-26 18:09:27]  >> "Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb[\r][\n]"
+256  DEBUG [2017-07-26 18:09:27]  >> "Host: dm-81.data.aliyun.com[\r][\n]"
+256  DEBUG [2017-07-26 18:09:27]  >> "Connection: Keep-Alive[\r][\n]"
+256  DEBUG [2017-07-26 18:09:27]  >> "User-Agent: Apache-HttpClient/4.2.1 (java 1.5)[\r][\n]"
+256  DEBUG [2017-07-26 18:09:27]  >> "[\r][\n]"
+256  DEBUG [2017-07-26 18:09:27]  >> GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+256  DEBUG [2017-07-26 18:09:27]  >> Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb
+257  DEBUG [2017-07-26 18:09:27]  >> Host: dm-81.data.aliyun.com
+257  DEBUG [2017-07-26 18:09:27]  >> Connection: Keep-Alive
+257  DEBUG [2017-07-26 18:09:27]  >> User-Agent: Apache-HttpClient/4.2.1 (java 1.5)
+287  DEBUG [2017-07-26 18:09:27]  << "HTTP/1.1 200 OK[\r][\n]"
+289  DEBUG [2017-07-26 18:09:27]  << "Server: Tengine[\r][\n]"
+289  DEBUG [2017-07-26 18:09:27]  << "Date: Wed, 26 Jul 2017 10:09:27 GMT[\r][\n]"
+289  DEBUG [2017-07-26 18:09:27]  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+289  DEBUG [2017-07-26 18:09:27]  << "Content-Length: 251[\r][\n]"
+289  DEBUG [2017-07-26 18:09:27]  << "Connection: keep-alive[\r][\n]"
+289  DEBUG [2017-07-26 18:09:27]  << "Access-Control-Allow-Origin: *[\r][\n]"
+289  DEBUG [2017-07-26 18:09:27]  << "Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH[\r][\n]"
+289  DEBUG [2017-07-26 18:09:27]  << "Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5[\r][\n]"
+290  DEBUG [2017-07-26 18:09:27]  << "Access-Control-Max-Age: 172800[\r][\n]"
+290  DEBUG [2017-07-26 18:09:27]  << "X-Ca-Request-Id: 1FB1657C-5631-44BB-AB55-B077FF67FE46[\r][\n]"
+290  DEBUG [2017-07-26 18:09:27]  << "EagleEye-TraceId: 0b802d1a15010637670246778e57b4[\r][\n]"
+290  DEBUG [2017-07-26 18:09:27]  << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+290  DEBUG [2017-07-26 18:09:27]  << "Timing-Allow-Origin: *[\r][\n]"
+290  DEBUG [2017-07-26 18:09:27]  << "[\r][\n]"
+290  DEBUG [2017-07-26 18:09:27]  Receiving response: HTTP/1.1 200 OK
+291  DEBUG [2017-07-26 18:09:27]  << HTTP/1.1 200 OK
+291  DEBUG [2017-07-26 18:09:27]  << Server: Tengine
+291  DEBUG [2017-07-26 18:09:27]  << Date: Wed, 26 Jul 2017 10:09:27 GMT
+291  DEBUG [2017-07-26 18:09:27]  << Content-Type: application/json;charset=UTF-8
+291  DEBUG [2017-07-26 18:09:27]  << Content-Length: 251
+291  DEBUG [2017-07-26 18:09:27]  << Connection: keep-alive
+291  DEBUG [2017-07-26 18:09:27]  << Access-Control-Allow-Origin: *
+291  DEBUG [2017-07-26 18:09:27]  << Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH
+291  DEBUG [2017-07-26 18:09:27]  << Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5
+291  DEBUG [2017-07-26 18:09:27]  << Access-Control-Max-Age: 172800
+291  DEBUG [2017-07-26 18:09:27]  << X-Ca-Request-Id: 1FB1657C-5631-44BB-AB55-B077FF67FE46
+291  DEBUG [2017-07-26 18:09:27]  << EagleEye-TraceId: 0b802d1a15010637670246778e57b4
+291  DEBUG [2017-07-26 18:09:27]  << Strict-Transport-Security: max-age=31536000
+291  DEBUG [2017-07-26 18:09:27]  << Timing-Allow-Origin: *
+294  DEBUG [2017-07-26 18:09:27]  Connection can be kept alive indefinitely
+299  DEBUG [2017-07-26 18:09:27]  << "{"code":0,"data":{"area":"[0xe5][0x8d][0x8e][0xe4][0xb8][0x9c]","area_id":"300000","city":"[0xe5][0x8d][0x97][0xe4][0xba][0xac][0xe5][0xb8][0x82]","city_id":"320100","country":"[0xe4][0xb8][0xad][0xe5][0x9b][0xbd]","country_id":"CN","county":"","county_id":"","ip":"36.149.2.106","isp":"[0xe7][0xa7][0xbb][0xe5][0x8a][0xa8]","isp_id":"100025","region":"[0xe6][0xb1][0x9f][0xe8][0x8b][0x8f][0xe7][0x9c][0x81]","region_id":"320000"}}"
+299  DEBUG [2017-07-26 18:09:27]  Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@601f7f3e
+299  DEBUG [2017-07-26 18:09:27]  Connection can be kept alive indefinitely
+0    DEBUG [2017-07-26 18:09:53]  Get connection for route {s}->https://dm-81.data.aliyun.com
+117  DEBUG [2017-07-26 18:09:54]  Connecting to dm-81.data.aliyun.com:443
+250  DEBUG [2017-07-26 18:09:54]  CookieSpec selected: best-match
+263  DEBUG [2017-07-26 18:09:54]  Auth cache not set in the context
+264  DEBUG [2017-07-26 18:09:54]  Proxy auth state: UNCHALLENGED
+264  DEBUG [2017-07-26 18:09:54]  Attempt 1 to execute request
+265  DEBUG [2017-07-26 18:09:54]  Sending request: GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+265  DEBUG [2017-07-26 18:09:54]  >> "GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1[\r][\n]"
+266  DEBUG [2017-07-26 18:09:54]  >> "Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb[\r][\n]"
+266  DEBUG [2017-07-26 18:09:54]  >> "Host: dm-81.data.aliyun.com[\r][\n]"
+266  DEBUG [2017-07-26 18:09:54]  >> "Connection: Keep-Alive[\r][\n]"
+267  DEBUG [2017-07-26 18:09:54]  >> "User-Agent: Apache-HttpClient/4.2.1 (java 1.5)[\r][\n]"
+267  DEBUG [2017-07-26 18:09:54]  >> "[\r][\n]"
+267  DEBUG [2017-07-26 18:09:54]  >> GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+267  DEBUG [2017-07-26 18:09:54]  >> Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb
+267  DEBUG [2017-07-26 18:09:54]  >> Host: dm-81.data.aliyun.com
+267  DEBUG [2017-07-26 18:09:54]  >> Connection: Keep-Alive
+267  DEBUG [2017-07-26 18:09:54]  >> User-Agent: Apache-HttpClient/4.2.1 (java 1.5)
+294  DEBUG [2017-07-26 18:09:54]  << "HTTP/1.1 200 OK[\r][\n]"
+295  DEBUG [2017-07-26 18:09:54]  << "Server: Tengine[\r][\n]"
+295  DEBUG [2017-07-26 18:09:54]  << "Date: Wed, 26 Jul 2017 10:09:54 GMT[\r][\n]"
+295  DEBUG [2017-07-26 18:09:54]  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+295  DEBUG [2017-07-26 18:09:54]  << "Content-Length: 251[\r][\n]"
+296  DEBUG [2017-07-26 18:09:54]  << "Connection: keep-alive[\r][\n]"
+296  DEBUG [2017-07-26 18:09:54]  << "Access-Control-Allow-Origin: *[\r][\n]"
+296  DEBUG [2017-07-26 18:09:54]  << "Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH[\r][\n]"
+296  DEBUG [2017-07-26 18:09:54]  << "Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5[\r][\n]"
+296  DEBUG [2017-07-26 18:09:54]  << "Access-Control-Max-Age: 172800[\r][\n]"
+296  DEBUG [2017-07-26 18:09:54]  << "X-Ca-Request-Id: 30E0B96A-46FA-47C0-96E2-734996404B07[\r][\n]"
+296  DEBUG [2017-07-26 18:09:54]  << "EagleEye-TraceId: 0a67cc5715010637940352265e3352[\r][\n]"
+296  DEBUG [2017-07-26 18:09:54]  << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+296  DEBUG [2017-07-26 18:09:54]  << "Timing-Allow-Origin: *[\r][\n]"
+296  DEBUG [2017-07-26 18:09:54]  << "[\r][\n]"
+297  DEBUG [2017-07-26 18:09:54]  Receiving response: HTTP/1.1 200 OK
+297  DEBUG [2017-07-26 18:09:54]  << HTTP/1.1 200 OK
+297  DEBUG [2017-07-26 18:09:54]  << Server: Tengine
+297  DEBUG [2017-07-26 18:09:54]  << Date: Wed, 26 Jul 2017 10:09:54 GMT
+297  DEBUG [2017-07-26 18:09:54]  << Content-Type: application/json;charset=UTF-8
+297  DEBUG [2017-07-26 18:09:54]  << Content-Length: 251
+297  DEBUG [2017-07-26 18:09:54]  << Connection: keep-alive
+297  DEBUG [2017-07-26 18:09:54]  << Access-Control-Allow-Origin: *
+297  DEBUG [2017-07-26 18:09:54]  << Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH
+297  DEBUG [2017-07-26 18:09:54]  << Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5
+298  DEBUG [2017-07-26 18:09:54]  << Access-Control-Max-Age: 172800
+298  DEBUG [2017-07-26 18:09:54]  << X-Ca-Request-Id: 30E0B96A-46FA-47C0-96E2-734996404B07
+298  DEBUG [2017-07-26 18:09:54]  << EagleEye-TraceId: 0a67cc5715010637940352265e3352
+298  DEBUG [2017-07-26 18:09:54]  << Strict-Transport-Security: max-age=31536000
+298  DEBUG [2017-07-26 18:09:54]  << Timing-Allow-Origin: *
+300  DEBUG [2017-07-26 18:09:54]  Connection can be kept alive indefinitely
+305  DEBUG [2017-07-26 18:09:54]  << "{"code":0,"data":{"area":"[0xe5][0x8d][0x8e][0xe4][0xb8][0x9c]","area_id":"300000","city":"[0xe5][0x8d][0x97][0xe4][0xba][0xac][0xe5][0xb8][0x82]","city_id":"320100","country":"[0xe4][0xb8][0xad][0xe5][0x9b][0xbd]","country_id":"CN","county":"","county_id":"","ip":"36.149.2.106","isp":"[0xe7][0xa7][0xbb][0xe5][0x8a][0xa8]","isp_id":"100025","region":"[0xe6][0xb1][0x9f][0xe8][0x8b][0x8f][0xe7][0x9c][0x81]","region_id":"320000"}}"
+305  DEBUG [2017-07-26 18:09:54]  Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1706b188
+305  DEBUG [2017-07-26 18:09:54]  Connection can be kept alive indefinitely
+0    DEBUG [2017-07-26 18:10:18]  Get connection for route {s}->https://dm-81.data.aliyun.com
+111  DEBUG [2017-07-26 18:10:18]  Connecting to dm-81.data.aliyun.com:443
+230  DEBUG [2017-07-26 18:10:18]  CookieSpec selected: best-match
+239  DEBUG [2017-07-26 18:10:18]  Auth cache not set in the context
+240  DEBUG [2017-07-26 18:10:18]  Proxy auth state: UNCHALLENGED
+240  DEBUG [2017-07-26 18:10:18]  Attempt 1 to execute request
+240  DEBUG [2017-07-26 18:10:18]  Sending request: GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+241  DEBUG [2017-07-26 18:10:18]  >> "GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1[\r][\n]"
+242  DEBUG [2017-07-26 18:10:18]  >> "Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb[\r][\n]"
+242  DEBUG [2017-07-26 18:10:18]  >> "Host: dm-81.data.aliyun.com[\r][\n]"
+242  DEBUG [2017-07-26 18:10:18]  >> "Connection: Keep-Alive[\r][\n]"
+242  DEBUG [2017-07-26 18:10:18]  >> "User-Agent: Apache-HttpClient/4.2.1 (java 1.5)[\r][\n]"
+242  DEBUG [2017-07-26 18:10:18]  >> "[\r][\n]"
+243  DEBUG [2017-07-26 18:10:18]  >> GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+243  DEBUG [2017-07-26 18:10:18]  >> Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb
+243  DEBUG [2017-07-26 18:10:18]  >> Host: dm-81.data.aliyun.com
+243  DEBUG [2017-07-26 18:10:18]  >> Connection: Keep-Alive
+243  DEBUG [2017-07-26 18:10:18]  >> User-Agent: Apache-HttpClient/4.2.1 (java 1.5)
+275  DEBUG [2017-07-26 18:10:18]  << "HTTP/1.1 200 OK[\r][\n]"
+276  DEBUG [2017-07-26 18:10:18]  << "Server: Tengine[\r][\n]"
+276  DEBUG [2017-07-26 18:10:18]  << "Date: Wed, 26 Jul 2017 10:10:18 GMT[\r][\n]"
+276  DEBUG [2017-07-26 18:10:18]  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+276  DEBUG [2017-07-26 18:10:18]  << "Content-Length: 251[\r][\n]"
+276  DEBUG [2017-07-26 18:10:18]  << "Connection: keep-alive[\r][\n]"
+277  DEBUG [2017-07-26 18:10:18]  << "Access-Control-Allow-Origin: *[\r][\n]"
+277  DEBUG [2017-07-26 18:10:18]  << "Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH[\r][\n]"
+277  DEBUG [2017-07-26 18:10:18]  << "Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5[\r][\n]"
+277  DEBUG [2017-07-26 18:10:18]  << "Access-Control-Max-Age: 172800[\r][\n]"
+277  DEBUG [2017-07-26 18:10:18]  << "X-Ca-Request-Id: 3EBD4E6C-32AF-4EB0-A80D-3A62C134143A[\r][\n]"
+277  DEBUG [2017-07-26 18:10:18]  << "EagleEye-TraceId: 0bfb836915010638183907516e72ee[\r][\n]"
+277  DEBUG [2017-07-26 18:10:18]  << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+277  DEBUG [2017-07-26 18:10:18]  << "Timing-Allow-Origin: *[\r][\n]"
+277  DEBUG [2017-07-26 18:10:18]  << "[\r][\n]"
+278  DEBUG [2017-07-26 18:10:18]  Receiving response: HTTP/1.1 200 OK
+278  DEBUG [2017-07-26 18:10:18]  << HTTP/1.1 200 OK
+278  DEBUG [2017-07-26 18:10:18]  << Server: Tengine
+278  DEBUG [2017-07-26 18:10:18]  << Date: Wed, 26 Jul 2017 10:10:18 GMT
+278  DEBUG [2017-07-26 18:10:18]  << Content-Type: application/json;charset=UTF-8
+278  DEBUG [2017-07-26 18:10:18]  << Content-Length: 251
+278  DEBUG [2017-07-26 18:10:18]  << Connection: keep-alive
+278  DEBUG [2017-07-26 18:10:18]  << Access-Control-Allow-Origin: *
+278  DEBUG [2017-07-26 18:10:18]  << Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH
+278  DEBUG [2017-07-26 18:10:18]  << Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5
+278  DEBUG [2017-07-26 18:10:18]  << Access-Control-Max-Age: 172800
+279  DEBUG [2017-07-26 18:10:18]  << X-Ca-Request-Id: 3EBD4E6C-32AF-4EB0-A80D-3A62C134143A
+279  DEBUG [2017-07-26 18:10:18]  << EagleEye-TraceId: 0bfb836915010638183907516e72ee
+279  DEBUG [2017-07-26 18:10:18]  << Strict-Transport-Security: max-age=31536000
+279  DEBUG [2017-07-26 18:10:18]  << Timing-Allow-Origin: *
+281  DEBUG [2017-07-26 18:10:18]  Connection can be kept alive indefinitely
+286  DEBUG [2017-07-26 18:10:18]  << "{"code":0,"data":{"area":"[0xe5][0x8d][0x8e][0xe4][0xb8][0x9c]","area_id":"300000","city":"[0xe5][0x8d][0x97][0xe4][0xba][0xac][0xe5][0xb8][0x82]","city_id":"320100","country":"[0xe4][0xb8][0xad][0xe5][0x9b][0xbd]","country_id":"CN","county":"","county_id":"","ip":"36.149.2.106","isp":"[0xe7][0xa7][0xbb][0xe5][0x8a][0xa8]","isp_id":"100025","region":"[0xe6][0xb1][0x9f][0xe8][0x8b][0x8f][0xe7][0x9c][0x81]","region_id":"320000"}}"
+287  DEBUG [2017-07-26 18:10:18]  Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@38716387
+287  DEBUG [2017-07-26 18:10:18]  Connection can be kept alive indefinitely
+0    DEBUG [2017-07-26 18:13:57]  Get connection for route {s}->https://dm-81.data.aliyun.com
+130  DEBUG [2017-07-26 18:13:57]  Connecting to dm-81.data.aliyun.com:443
+249  DEBUG [2017-07-26 18:13:57]  CookieSpec selected: best-match
+260  DEBUG [2017-07-26 18:13:57]  Auth cache not set in the context
+261  DEBUG [2017-07-26 18:13:57]  Proxy auth state: UNCHALLENGED
+261  DEBUG [2017-07-26 18:13:57]  Attempt 1 to execute request
+261  DEBUG [2017-07-26 18:13:57]  Sending request: GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+262  DEBUG [2017-07-26 18:13:57]  >> "GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1[\r][\n]"
+263  DEBUG [2017-07-26 18:13:57]  >> "Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb[\r][\n]"
+263  DEBUG [2017-07-26 18:13:57]  >> "Host: dm-81.data.aliyun.com[\r][\n]"
+263  DEBUG [2017-07-26 18:13:57]  >> "Connection: Keep-Alive[\r][\n]"
+263  DEBUG [2017-07-26 18:13:57]  >> "User-Agent: Apache-HttpClient/4.2.1 (java 1.5)[\r][\n]"
+263  DEBUG [2017-07-26 18:13:57]  >> "[\r][\n]"
+263  DEBUG [2017-07-26 18:13:57]  >> GET /rest/160601/ip/getIpInfo.json?ip=36.149.2.106 HTTP/1.1
+264  DEBUG [2017-07-26 18:13:57]  >> Authorization: APPCODE 0bcc6cfef7f94e578112b202c7cb09cb
+264  DEBUG [2017-07-26 18:13:57]  >> Host: dm-81.data.aliyun.com
+264  DEBUG [2017-07-26 18:13:57]  >> Connection: Keep-Alive
+264  DEBUG [2017-07-26 18:13:57]  >> User-Agent: Apache-HttpClient/4.2.1 (java 1.5)
+290  DEBUG [2017-07-26 18:13:57]  << "HTTP/1.1 200 OK[\r][\n]"
+291  DEBUG [2017-07-26 18:13:57]  << "Server: Tengine[\r][\n]"
+291  DEBUG [2017-07-26 18:13:57]  << "Date: Wed, 26 Jul 2017 10:13:57 GMT[\r][\n]"
+291  DEBUG [2017-07-26 18:13:57]  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+292  DEBUG [2017-07-26 18:13:57]  << "Content-Length: 251[\r][\n]"
+292  DEBUG [2017-07-26 18:13:57]  << "Connection: keep-alive[\r][\n]"
+292  DEBUG [2017-07-26 18:13:57]  << "Access-Control-Allow-Origin: *[\r][\n]"
+292  DEBUG [2017-07-26 18:13:57]  << "Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH[\r][\n]"
+292  DEBUG [2017-07-26 18:13:57]  << "Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5[\r][\n]"
+292  DEBUG [2017-07-26 18:13:57]  << "Access-Control-Max-Age: 172800[\r][\n]"
+292  DEBUG [2017-07-26 18:13:57]  << "X-Ca-Request-Id: FE7FB7D1-51D9-4E29-93ED-F98F8B7E51C8[\r][\n]"
+292  DEBUG [2017-07-26 18:13:57]  << "Timing-Allow-Origin: *[\r][\n]"
+292  DEBUG [2017-07-26 18:13:57]  << "EagleEye-TraceId: 0b802cc315010640372386401e79ba[\r][\n]"
+292  DEBUG [2017-07-26 18:13:57]  << "Strict-Transport-Security: max-age=31536000[\r][\n]"
+292  DEBUG [2017-07-26 18:13:57]  << "[\r][\n]"
+293  DEBUG [2017-07-26 18:13:57]  Receiving response: HTTP/1.1 200 OK
+293  DEBUG [2017-07-26 18:13:57]  << HTTP/1.1 200 OK
+293  DEBUG [2017-07-26 18:13:57]  << Server: Tengine
+293  DEBUG [2017-07-26 18:13:57]  << Date: Wed, 26 Jul 2017 10:13:57 GMT
+293  DEBUG [2017-07-26 18:13:57]  << Content-Type: application/json;charset=UTF-8
+293  DEBUG [2017-07-26 18:13:57]  << Content-Length: 251
+293  DEBUG [2017-07-26 18:13:57]  << Connection: keep-alive
+293  DEBUG [2017-07-26 18:13:57]  << Access-Control-Allow-Origin: *
+293  DEBUG [2017-07-26 18:13:57]  << Access-Control-Allow-Methods: GET,POST,PUT,DELETE,HEAD,OPTIONS , PATCH
+294  DEBUG [2017-07-26 18:13:57]  << Access-Control-Allow-Headers: X-Requested-With, X-Sequence,X-Ca-Key,X-Ca-Secret,X-Ca-Version,X-Ca-Timestamp,X-Ca-Nonce,X-Ca-API-Key,X-Ca-Stage,X-Ca-Client-DeviceId,X-Ca-Client-AppId,X-Ca-Signature,X-Ca-Signature-Headers,X-Forwarded-For,X-Ca-Date,X-Ca-Request-Mode,Authorization,Content-Type,Accept,Accept-Ranges,Cache-Control,Range,Content-MD5
+294  DEBUG [2017-07-26 18:13:57]  << Access-Control-Max-Age: 172800
+294  DEBUG [2017-07-26 18:13:57]  << X-Ca-Request-Id: FE7FB7D1-51D9-4E29-93ED-F98F8B7E51C8
+294  DEBUG [2017-07-26 18:13:57]  << Timing-Allow-Origin: *
+294  DEBUG [2017-07-26 18:13:57]  << EagleEye-TraceId: 0b802cc315010640372386401e79ba
+294  DEBUG [2017-07-26 18:13:57]  << Strict-Transport-Security: max-age=31536000
+296  DEBUG [2017-07-26 18:13:57]  Connection can be kept alive indefinitely
+302  DEBUG [2017-07-26 18:13:57]  << "{"code":0,"data":{"area":"[0xe5][0x8d][0x8e][0xe4][0xb8][0x9c]","area_id":"300000","city":"[0xe5][0x8d][0x97][0xe4][0xba][0xac][0xe5][0xb8][0x82]","city_id":"320100","country":"[0xe4][0xb8][0xad][0xe5][0x9b][0xbd]","country_id":"CN","county":"","county_id":"","ip":"36.149.2.106","isp":"[0xe7][0xa7][0xbb][0xe5][0x8a][0xa8]","isp_id":"100025","region":"[0xe6][0xb1][0x9f][0xe8][0x8b][0x8f][0xe7][0x9c][0x81]","region_id":"320000"}}"
+302  DEBUG [2017-07-26 18:13:57]  Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1706b188
+302  DEBUG [2017-07-26 18:13:57]  Connection can be kept alive indefinitely
+0    DEBUG [2017-07-29 20:09:32]  Get connection for route {}->http://api.map.baidu.com
+46   DEBUG [2017-07-29 20:09:32]  Connecting to api.map.baidu.com:80
+110  DEBUG [2017-07-29 20:09:32]  CookieSpec selected: best-match
+123  DEBUG [2017-07-29 20:09:32]  Auth cache not set in the context
+123  DEBUG [2017-07-29 20:09:32]  Target auth state: UNCHALLENGED
+123  DEBUG [2017-07-29 20:09:32]  Proxy auth state: UNCHALLENGED
+123  DEBUG [2017-07-29 20:09:32]  Attempt 1 to execute request
+124  DEBUG [2017-07-29 20:09:32]  Sending request: GET /location/ip?ak=Bk0aLzSaZVVYhdGrT6ZURX3021xNIffW&coor=bd09ll&ip HTTP/1.1
+124  DEBUG [2017-07-29 20:09:32]  >> "GET /location/ip?ak=Bk0aLzSaZVVYhdGrT6ZURX3021xNIffW&coor=bd09ll&ip HTTP/1.1[\r][\n]"
+125  DEBUG [2017-07-29 20:09:32]  >> "Host: api.map.baidu.com[\r][\n]"
+125  DEBUG [2017-07-29 20:09:32]  >> "Connection: Keep-Alive[\r][\n]"
+125  DEBUG [2017-07-29 20:09:32]  >> "User-Agent: Apache-HttpClient/4.2.1 (java 1.5)[\r][\n]"
+125  DEBUG [2017-07-29 20:09:32]  >> "[\r][\n]"
+125  DEBUG [2017-07-29 20:09:32]  >> GET /location/ip?ak=Bk0aLzSaZVVYhdGrT6ZURX3021xNIffW&coor=bd09ll&ip HTTP/1.1
+125  DEBUG [2017-07-29 20:09:32]  >> Host: api.map.baidu.com
+126  DEBUG [2017-07-29 20:09:32]  >> Connection: Keep-Alive
+126  DEBUG [2017-07-29 20:09:32]  >> User-Agent: Apache-HttpClient/4.2.1 (java 1.5)
+165  DEBUG [2017-07-29 20:09:32]  << "HTTP/1.1 200 OK[\r][\n]"
+167  DEBUG [2017-07-29 20:09:32]  << "Cache-Control: max-age=86400[\r][\n]"
+167  DEBUG [2017-07-29 20:09:32]  << "Content-Length: 316[\r][\n]"
+167  DEBUG [2017-07-29 20:09:32]  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+167  DEBUG [2017-07-29 20:09:32]  << "Date: Sat, 29 Jul 2017 12:09:29 GMT[\r][\n]"
+167  DEBUG [2017-07-29 20:09:32]  << "Expires: Sun, 30 Jul 2017 12:09:29 GMT[\r][\n]"
+167  DEBUG [2017-07-29 20:09:32]  << "Http_x_bd_logid: 1173877810[\r][\n]"
+167  DEBUG [2017-07-29 20:09:32]  << "Http_x_bd_logid64: 17225547207822791637[\r][\n]"
+167  DEBUG [2017-07-29 20:09:32]  << "Http_x_bd_product: map[\r][\n]"
+167  DEBUG [2017-07-29 20:09:32]  << "Http_x_bd_subsys: apimap[\r][\n]"
+167  DEBUG [2017-07-29 20:09:32]  << "P3p: CP=" OTI DSP COR IVA OUR IND COM "[\r][\n]"
+167  DEBUG [2017-07-29 20:09:32]  << "P3p: CP=" OTI DSP COR IVA OUR IND COM "[\r][\n]"
+167  DEBUG [2017-07-29 20:09:32]  << "Server: Apache[\r][\n]"
+168  DEBUG [2017-07-29 20:09:32]  << "Set-Cookie: BAIDUID=5AA1F0ED868D46B345EE9E0F827E4924:FG=1; max-age=31536000; expires=Sun, 29-Jul-18 12:09:29 GMT; domain=.baidu.com; path=/; version=1[\r][\n]"
+168  DEBUG [2017-07-29 20:09:32]  << "Set-Cookie: BAIDUID=4D5B3745EC2E4086D55BF44DCC535777:FG=1; expires=Sun, 29-Jul-18 12:09:29 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1[\r][\n]"
+168  DEBUG [2017-07-29 20:09:32]  << "[\r][\n]"
+168  DEBUG [2017-07-29 20:09:32]  Receiving response: HTTP/1.1 200 OK
+168  DEBUG [2017-07-29 20:09:32]  << HTTP/1.1 200 OK
+168  DEBUG [2017-07-29 20:09:32]  << Cache-Control: max-age=86400
+169  DEBUG [2017-07-29 20:09:32]  << Content-Length: 316
+169  DEBUG [2017-07-29 20:09:32]  << Content-Type: application/json;charset=utf-8
+169  DEBUG [2017-07-29 20:09:32]  << Date: Sat, 29 Jul 2017 12:09:29 GMT
+169  DEBUG [2017-07-29 20:09:32]  << Expires: Sun, 30 Jul 2017 12:09:29 GMT
+169  DEBUG [2017-07-29 20:09:32]  << Http_x_bd_logid: 1173877810
+169  DEBUG [2017-07-29 20:09:32]  << Http_x_bd_logid64: 17225547207822791637
+169  DEBUG [2017-07-29 20:09:32]  << Http_x_bd_product: map
+169  DEBUG [2017-07-29 20:09:32]  << Http_x_bd_subsys: apimap
+169  DEBUG [2017-07-29 20:09:32]  << P3p: CP=" OTI DSP COR IVA OUR IND COM "
+169  DEBUG [2017-07-29 20:09:32]  << P3p: CP=" OTI DSP COR IVA OUR IND COM "
+169  DEBUG [2017-07-29 20:09:32]  << Server: Apache
+169  DEBUG [2017-07-29 20:09:32]  << Set-Cookie: BAIDUID=5AA1F0ED868D46B345EE9E0F827E4924:FG=1; max-age=31536000; expires=Sun, 29-Jul-18 12:09:29 GMT; domain=.baidu.com; path=/; version=1
+169  DEBUG [2017-07-29 20:09:32]  << Set-Cookie: BAIDUID=4D5B3745EC2E4086D55BF44DCC535777:FG=1; expires=Sun, 29-Jul-18 12:09:29 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+179  DEBUG [2017-07-29 20:09:32]  Cookie accepted: "[version: 0][name: BAIDUID][value: 5AA1F0ED868D46B345EE9E0F827E4924:FG=1][domain: .baidu.com][path: /][expiry: Sun Jul 29 20:09:32 CST 2018]". 
+179  DEBUG [2017-07-29 20:09:32]  Cookie accepted: "[version: 0][name: BAIDUID][value: 4D5B3745EC2E4086D55BF44DCC535777:FG=1][domain: .baidu.com][path: /][expiry: Sun Jul 29 20:09:29 CST 2018]". 
+180  DEBUG [2017-07-29 20:09:32]  Connection can be kept alive indefinitely
+183  DEBUG [2017-07-29 20:09:32]  << "{"address":"CN|\u6c5f\u82cf|\u5357\u4eac|None|CMNET|0|0","content":{"address":"\u6c5f\u82cf\u7701\u5357\u4eac\u5e02","address_detail":{"city":"\u5357\u4eac\u5e02","city_code":315,"district":"","province":"\u6c5f\u82cf\u7701","street":"","street_number":""},"point":{"x":"118.77807441","y":"32.05723550"}},"status":0}"
+183  DEBUG [2017-07-29 20:09:32]  Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5cea6f21
+183  DEBUG [2017-07-29 20:09:32]  Connection can be kept alive indefinitely
