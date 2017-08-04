@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%
 	request.setAttribute("base", request.getContextPath());
 	request.setAttribute("jsPath", request.getContextPath()+"/resources/js");
@@ -7,8 +8,9 @@
 %>
 
 <%
-	String ip = request.getRemoteAddr();
-	request.setAttribute("ipAddr", ip);
+	/* String ip = request.getRemoteAddr();
+	com.wat.domain.UserInfo user =(com.wat.domain.UserInfo)request.getSession().getAttribute("user");
+	user.setUserIPAddr(ip); */
 %>
 
 <!DOCTYPE html>
@@ -19,7 +21,6 @@
 	<title>老哥666</title>
 	
 	<link rel="stylesheet" href="${cssPath }/bootstrap.min.css"/>
-	
 	
 	<script type="text/javascript" src="${jsPath }/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="${jsPath }/bootstrap.min.js"></script>
@@ -47,7 +48,7 @@
 			
 			$("#promiseMe").click(function(){
 				$.ajax({
-					url:"promiseMe.do",
+					url:"${base}/promiseMe.do",
 					data:{},
 					success:function(result){
 						if(result === '1'){
@@ -61,7 +62,7 @@
 			
 			$("#buildpage").click(function(){
 				$.ajax({
-					url:"buildpage.do",
+					url:"${base}/buildpage.do",
 					data:{},
 					success:function(result){
 						console.warn(result);
@@ -85,16 +86,24 @@
                 <li><a href="#about">聊天室</a></li>
                 <li><a id="promiseMe" href="#">点赞</a></li>
                 <li><a id="buildpage" href="#">FreeMaker</a></li>
-                <li><a href="#contact">IP：${ipAddr }</a></li>
+                <li><a href="#contact">IP：${user.userIPAddr }${user.openID}</a></li>
                 <li><a class="gap">|</a></li>
-                <li><a href="${base }/beforeQQLogin.do"><img class="img-responsive" alt="" src="${imgPath }/qqlogin.png" /></a></li>
-                <li><a href="#">登录</a></li>
-                <li><a href="#">注册</a></li>
+                <c:choose>  
+				   <c:when test="${user.openID != '' }">
+	                <li><img style="radius:50px;" class="img-responsive" alt="" src="${user.headImg }" /></li>
+	                <li><a href="${base }/personal.do">${user.nickName }</a></li>
+	                <li><a href="#">登出</a></li>
+				   </c:when>  
+				   <c:otherwise>  
+	                <li><a style="width:50px;height:50px;" title="QQ登录" href="${base }/beforeQQLogin.do"><img class="img-responsive" alt="" src="${imgPath }/qqlogin.png" /></a></li>
+	                <li><a href="${base }/login.do">登录</a></li>
+	                <li><a href="#">注册</a></li>
+				   </c:otherwise>  
+				</c:choose>
               </ul>
           </div>
         </nav>
 	<div class="container">
-		<a style="display:none;" href="${base }/freeindex.do">Freemaker!!!</a>
 		<img class="img-responsive" alt="" src="${imgPath }/003.jpg" />
 	</div>
 </body>

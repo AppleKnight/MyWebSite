@@ -40,7 +40,14 @@ public class IndexAction
      * 修改时间： 2017年6月20日 上午10:50:54
      */
     @RequestMapping(value="/index")
-    public ModelAndView indexView(){
+    public ModelAndView indexView(HttpServletRequest request){
+    	
+    	UserInfo user = new UserInfo();
+		user.setOpenID("123");
+		user.setNickName("流年");
+		user.setHeadImg("流年");
+		user.setUserIPAddr(request.getRemoteAddr());
+		request.getSession().setAttribute("user", user);
         return new ModelAndView("index");
     }
 

@@ -3,8 +3,10 @@
   <display-name>SpringCommonDemo</display-name>
   <!-- 访问项目后直接定位到该页面 -->
   <welcome-file-list>
-    <welcome-file>/WEB-INF/jsp/index.jsp</welcome-file>
+    <!-- <welcome-file>/WEB-INF/jsp/index.jsp</welcome-file> -->
+    <welcome-file>index</welcome-file>
   </welcome-file-list>
+  
   <!-- 上下文参数（组件） -->
    <context-param>     
      <param-name>contextConfigLocation</param-name>     
@@ -24,7 +26,12 @@
 		<load-on-startup>1</load-on-startup>
 		<async-supported>true</async-supported>
 	</servlet>
-
+	<!-- 首页请求 照样交给springmvc解析 -->
+	<servlet-mapping>
+	   <servlet-name>appServlet</servlet-name>
+	   <url-pattern>/index</url-pattern>
+	</servlet-mapping>
+    <!-- all request dispatched by springmvc -->
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
