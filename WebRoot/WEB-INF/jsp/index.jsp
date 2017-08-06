@@ -48,7 +48,7 @@
 			
 			$("#promiseMe").click(function(){
 				$.ajax({
-					url:"${base}/promiseMe.do",
+					url:"${base}/promiseMe",
 					data:{},
 					success:function(result){
 						if(result === '1'){
@@ -62,13 +62,24 @@
 			
 			$("#buildpage").click(function(){
 				$.ajax({
-					url:"${base}/buildpage.do",
+					url:"${base}/buildpage",
 					data:{},
 					success:function(result){
 						console.warn(result);
 					}
 				});
 			});
+			
+			$("#login").click(function(){
+				layer.msg('站长在找工作ing，后期功能会全部更新维护~',{icon:2,time:3000});
+				/* $.ajax({
+					url:"${base}/login",
+					data:{},
+					success:function(result){
+					
+					}
+				});*/
+			}); 
 			
 		});
 		
@@ -78,7 +89,7 @@
 		<nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <a class="navbar-brand brand" href="#">老哥666</a>
+              <a class="navbar-brand brand" href="javascript:;">老哥666</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -89,14 +100,14 @@
                 <li><a href="#contact">IP：${user.userIPAddr }${user.openID}</a></li>
                 <li><a class="gap">|</a></li>
                 <c:choose>  
-				   <c:when test="${user.openID != '' }">
+				   <c:when test="${user.openID != '' && user.openID != null && user.openID != undefind}">
 	                <li><img style="radius:50px;" class="img-responsive" alt="" src="${user.headImg }" /></li>
-	                <li><a href="${base }/personal.do">${user.nickName }</a></li>
+	                <li><a href="${base }/personal">${user.nickName }</a></li>
 	                <li><a href="#">登出</a></li>
 				   </c:when>  
 				   <c:otherwise>  
-	                <li><a style="width:50px;height:50px;" title="QQ登录" href="${base }/beforeQQLogin.do"><img class="img-responsive" alt="" src="${imgPath }/qqlogin.png" /></a></li>
-	                <li><a href="${base }/login.do">登录</a></li>
+	                <li><a style="width:50px;height:50px;" title="QQ登录" href="${base }/beforeQQLogin"><img class="img-responsive" alt="" src="${imgPath }/qqlogin.png" /></a></li>
+	                <li><a id="login" href="javascript:;">登录</a></li>
 	                <li><a href="#">注册</a></li>
 				   </c:otherwise>  
 				</c:choose>

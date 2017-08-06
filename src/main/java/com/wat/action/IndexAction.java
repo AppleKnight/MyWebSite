@@ -23,6 +23,14 @@ import com.wat.domain.FreeMakerInfo;
 import com.wat.domain.UserInfo;
 import com.wat.freemaker.FreemakerTools;
 
+/**
+ * 初始化模块
+ * 
+ * @author Wutao
+ * @version 2017年8月3日 上午9:27:04
+ * @see
+ * @since
+ */
 @Controller
 @Scope("prototype")
 public class IndexAction
@@ -33,7 +41,7 @@ public class IndexAction
     private FreemakerDao freemakerDao;
     
     /**
-     * 描述:
+     * 描述:首页请求
      * 参数：@param
      * 返回值： ModelAndView
      * 修改人： Wat
@@ -41,18 +49,17 @@ public class IndexAction
      */
     @RequestMapping(value="/index")
     public ModelAndView indexView(HttpServletRequest request){
-    	
-    	UserInfo user = new UserInfo();
-		user.setOpenID("123");
-		user.setNickName("流年");
-		user.setHeadImg("流年");
+    	UserInfo user = (UserInfo) request.getSession().getAttribute("user");
+    	if(user == null){
+    		user = new UserInfo();
+    	}
 		user.setUserIPAddr(request.getRemoteAddr());
 		request.getSession().setAttribute("user", user);
         return new ModelAndView("index");
     }
 
     /**
-     * 描述:
+     * 描述:赞赏功能
      * 参数：@param
      * 返回值： String
      * 修改人： Wat
@@ -66,33 +73,17 @@ public class IndexAction
         UserInfo user = new UserInfo();
         user.setUserName(userName);
         user.setUserIPAddr(ipaddr);
-        /*int ipres = userDao.queryByIpAddr(ipaddr);
-        if(ipres >= 1){
-            return "2";
-        }else{
-        }*/
-            int result = userDao.addUser(user);
-            return String.valueOf(result);
+        int result = userDao.addUser(user);
+        return String.valueOf(result);
     }
     
     /**
-     * 描述:
+     * 描述:freemaker 控制器
      * 参数：@param
-     * 返回值：void  
+     * 返回值：String  
      * 修改人： 吴滔 P0071972
-     * 修改时间： 2017年6月26日 下午9:27:30
+     * 修改时间： 2017年8月5日 上午12:08:55
      */
-    @RequestMapping(value="/beforeQQLogin")
-    public void beforeQQLogin(HttpServletRequest request,HttpServletResponse response){
-    	 try {
-			response.sendRedirect(new Oauth().getAuthorizeURL(request));
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (QQConnectException e) {
-			e.printStackTrace();
-		}
-    }
-    
     @ResponseBody
     @RequestMapping(value="/buildpage")
     public String createStaticPage(HttpServletRequest request){

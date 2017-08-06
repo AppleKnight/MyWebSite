@@ -90,8 +90,8 @@
 	              <li><a class="active" href="#contact">个人中心</a></li>
 	              <li><a class="gap">|</a></li>
 	              <c:choose>  
-			   <c:when test="${openID != '' }">
-	               <li><a href="#">${nickName }</a></li>
+			   <c:when test="${user.openID != '' && user.openID != null && user.openID != undefind}">
+	               <li><a href="#">${user.nickName }</a></li>
 	               <li><a href="${base }/logout">登出</a></li>
 			   </c:when>  
 			   <c:otherwise>  
@@ -108,14 +108,14 @@
 		<div class="persional_property">
         <div class="person_info_con"><i class="icon-edit icon-large person-info-edit"></i><a name="M_base"></a>
           <dl class="person-photo">
-                      <dt><a href="javascript:;"><img src="${imgPath }/003.jpg" class="header"><span class="edit_person_pic"></span></a></dt>
+              <dt><a href="javascript:;"><img src="${user.headImg }" class="header"><span class="edit_person_pic"></span></a></dt>
           </dl>
           <dl class="person-info">
             <dt class="person-nick-name">
-        		<span>${nickName }</span>
+        		<span>${user.nickName }</span>
             </dt>
             <dd class="person-detail"> 
-            	<span class="info_null">未填写行业</span><span>|</span>学生<span>|</span>${nickName }<span>|</span>中国<span>|</span>男<span>|</span><span class="info_null">未填写生日</span> </dd>
+            	<span class="info_null">未填写行业</span><span>|</span><span>|</span>${user.nickName }<span>|</span>中国<span>|</span>${user.gender }<span>|</span><span class="info_null">未填写生日</span> </dd>
             <dd class="person-sign">个人简介</dd>
             <dd style="margin: 10px 0px"> 
 	            <div class="person-status clearfix">
