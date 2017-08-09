@@ -103,7 +103,7 @@ public class LoginAction
         	e.printStackTrace();
         }
         request.getSession().setAttribute("user", user);
-    	return "forward:/index";
+    	return "redirect:/index";
     }
 	
 	/**
@@ -118,7 +118,7 @@ public class LoginAction
 		com.wat.domain.UserInfo user = new com.wat.domain.UserInfo();
 		user.setUserIPAddr(request.getRemoteAddr());
 		request.getSession().setAttribute("user", user);
-		return "forward:/index";
+		return "redirect:/index";
 	}
 	
 	/**

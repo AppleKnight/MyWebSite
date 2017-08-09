@@ -45,7 +45,6 @@
 	<script type="text/javascript">
 		/* 初始化时执行 */
 		$(function(){
-			
 			$("#promiseMe").click(function(){
 				$.ajax({
 					url:"${base}/promiseMe",
@@ -97,11 +96,11 @@
                 <li><a href="#about">聊天室</a></li>
                 <li><a id="promiseMe" href="#">点赞</a></li>
                 <li><a id="buildpage" href="#">FreeMaker</a></li>
-                <li><a href="#contact">IP：${user.userIPAddr }${user.openID}</a></li>
+                <li><a href="#contact">IP：${user.userIPAddr }</a></li>
                 <li><a class="gap">|</a></li>
                 <c:choose>  
 				   <c:when test="${user.openID != '' && user.openID != null && user.openID != undefind}">
-	                <li><img style="radius:50px;" class="img-responsive" alt="" src="${user.headImg }" /></li>
+	                <li><img style="    border-radius: 50px;width: 50px;" class="img-responsive" alt="" src="${user.headImg }" /></li>
 	                <li><a href="${base }/personal">${user.nickName }</a></li>
 	                <li><a href="#">登出</a></li>
 				   </c:when>  
