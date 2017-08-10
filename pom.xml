@@ -164,7 +164,6 @@
           
   </dependencies>
   <build>
-  	<finalName>spring</finalName>
   	<!-- 打包配置文件至 classes 目录 -->
     <outputDirectory>${basedir}/WebRoot/WEB-INF/classes</outputDirectory>
 	<resources>
