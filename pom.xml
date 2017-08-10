@@ -9,7 +9,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <org.springframework-version>4.3.3.RELEASE</org.springframework-version>
-      <warPackageName>SpringCommonDemo</warPackageName>
 	  <tomcat.deploy.server>tomcat8</tomcat.deploy.server>
 	  <tomcat.deploy.serverUrl>http://127.0.0.1:8080/manager/text</tomcat.deploy.serverUrl>
   </properties>
@@ -215,7 +214,6 @@
         <configuration>
           <server>${tomcat.deploy.server}</server>
           <url>${tomcat.deploy.serverUrl}</url>
-          <path>/${warPackageName}</path>
         </configuration>
       </plugin>  
 		
