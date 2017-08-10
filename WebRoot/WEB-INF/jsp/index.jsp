@@ -88,7 +88,7 @@
 		<nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <a class="navbar-brand brand" href="javascript:;">老哥666</a>
+              <a class="navbar-brand brand" href="javascript:;">老哥666 Success</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
