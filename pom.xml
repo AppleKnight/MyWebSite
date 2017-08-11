@@ -9,8 +9,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <org.springframework-version>4.3.3.RELEASE</org.springframework-version>
-	  <tomcat.deploy.server>tomcat8</tomcat.deploy.server>
-	  <tomcat.deploy.serverUrl>http://127.0.0.1:8080/manager/text</tomcat.deploy.serverUrl>
   </properties>
   <dependencies>
   		<!-- common -->
@@ -76,6 +74,25 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
+		
+		<dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-context-support</artifactId>  
+			<version>${org.springframework-version}</version>
+        </dependency>
+        
+		<dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-test</artifactId>  
+			<version>${org.springframework-version}</version>
+        </dependency>
+        <!-- javamail -->  
+        <dependency>  
+            <groupId>javax.mail</groupId>  
+            <artifactId>mail</artifactId>  
+            <version>1.4.5</version>  
+        </dependency>
+        
 		<!-- jdbc properties -->
 		 <dependency>
 			<groupId>org.springframework</groupId>
@@ -154,7 +171,7 @@
             <artifactId>httpcore</artifactId>
             <version>4.2.1</version>
         </dependency>
-        
+        <!-- json 解析 -->
         <dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
@@ -173,7 +190,6 @@
 			</includes>
 		</resource>
 	</resources>
-	
 	
     <plugins>
       <plugin>

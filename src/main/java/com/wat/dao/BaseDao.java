@@ -15,7 +15,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
  */
 public class BaseDao
 {
-    @Autowired
     private JdbcTemplate jdbcTemplate;
     
     protected Logger log = Logger.getLogger(BaseDao.class);
