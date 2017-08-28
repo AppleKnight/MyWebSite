@@ -83,14 +83,14 @@
 	          </div>
 	          <div id="navbar" class="navbar-collapse collapse">
 	            <ul class="nav navbar-nav">
-	              <li><a href="${base }/index.do">首页</a></li>
+	              <li><a href="${base }/index">首页</a></li>
 	              <li><a href="#about">聊天室</a></li>
 	              <li><a id="promiseMe" href="#">点赞</a></li>
 	              <li><a id="buildpage" href="#">FreeMaker</a></li>
 	              <li><a class="active" href="#contact">个人中心</a></li>
 	              <li><a class="gap">|</a></li>
 	              <c:choose>  
-			   <c:when test="${user.openID != '' && user.openID != null && user.openID != undefind}">
+			   <c:when test="${user.nickName != '' && user.nickName != null && user.nickName != undefind}">
 	               <li><a href="#">${user.nickName }</a></li>
 	               <li><a href="${base }/logout">登出</a></li>
 			   </c:when>  

@@ -10,7 +10,10 @@
   <!-- 上下文参数（组件） -->
    <context-param>     
      <param-name>contextConfigLocation</param-name>     
-     <param-value>/WEB-INF/classes/jndi.datasource.xml</param-value>     
+     <param-value>
+     	/WEB-INF/classes/jndi.datasource.xml,
+     	/WEB-INF/classes/spring-mail.xml
+     </param-value>     
  </context-param>   
     <listener>     
      <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>     

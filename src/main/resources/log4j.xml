@@ -29,25 +29,25 @@
 	
 	<!-- 框架部分的日志 -->
 	<logger name="org.springframework.core">
-		<level value="debug" />
+		<level value="info" />
 	</logger>
 	
 	<logger name="org.springframework.beans">
-		<level value="debug" />
+		<level value="info" />
 	</logger>
 	
 	<logger name="org.springframework.context">
-		<level value="debug" />
+		<level value="info" />
 	</logger>
 
 	<logger name="org.springframework.web">
-		<level value="debug" />
+		<level value="info" />
 	</logger>
 	<logger name="com.alibaba">
-		<level value="debug" />
+		<level value="info" />
 	</logger>
     <logger name="org.springframework.messaging">
-        <level value="debug" />
+        <level value="info" />
     </logger>
     
 	<!-- 定义全局的日志 -->

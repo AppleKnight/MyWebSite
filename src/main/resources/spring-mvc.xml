@@ -11,15 +11,19 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!-- 配置自动扫描的包 -->
+	<!-- -->
 	<context:component-scan base-package="com.wat" use-default-filters="false">
-		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+		 <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>
+	
+	<!-- <context:component-scan base-package="com.wat"></context:component-scan> -->
 	
 	<!-- 注解驱动 -->
 	<mvc:annotation-driven/>
 	
 	<!-- 静态文件  location指实际项目中实际目录  mapping指资源位置 -->
 	<mvc:resources location="/resources/" mapping="/resources/**" />
+	<mvc:resources location="/swagger/" mapping="/swagger/**" />
 	<mvc:resources location="/html/" mapping="/html/**" />
 	
 	<!-- 使用内部资源视图解析器 -->
@@ -35,5 +39,8 @@
 		<beans:property name="maxInMemorySize" value="4096"/>
 		<beans:property name="uploadTempDir" value="fileUpload/temp"/>
 	</beans:bean>
-
+	
+	<!-- <beans:bean class="com.mangofactory.swagger.configuration.SpringSwaggerConfig" /> --> 
+	<beans:bean class="com.wat.config.SwaggerConfig"></beans:bean>
+	
 </beans:beans>

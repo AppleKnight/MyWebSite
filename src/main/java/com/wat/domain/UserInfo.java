@@ -41,6 +41,26 @@ public class UserInfo implements Serializable {
 
 	private String headImg;// qq用户头像
 
+	private String email;// 用户邮箱
+
+	private String password;// 用户密码
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	public String getUserIPAddr() {
 		return userIPAddr;
 	}
@@ -144,7 +164,7 @@ public class UserInfo implements Serializable {
 	public UserInfo(String userIPAddr, String userName, String userId,
 			Date recordTime, String nickName, String realName, String gender,
 			String province, String city, String year, String openID,
-			String headImg) {
+			String headImg, String email, String password) {
 		super();
 		this.userIPAddr = userIPAddr;
 		this.userName = userName;
@@ -158,6 +178,8 @@ public class UserInfo implements Serializable {
 		this.year = year;
 		this.openID = openID;
 		this.headImg = headImg;
+		this.email = email;
+		this.password = password;
 	}
 
 	@Override
@@ -167,7 +189,7 @@ public class UserInfo implements Serializable {
 				+ ", nickName=" + nickName + ", realName=" + realName
 				+ ", gender=" + gender + ", province=" + province + ", city="
 				+ city + ", year=" + year + ", openID=" + openID + ", headImg="
-				+ headImg + "]";
+				+ headImg + ", email=" + email + ", password=" + password + "]";
 	}
 
 }
